@@ -1,0 +1,265 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\setlength{\parskip}{1em}
+
+\title{Maths Semester II}
+\author{pcysf6 }
+\date{January 2020}
+
+\newcommand{\ODE}[3]{#1\frac{d^2y}{dx^2} + #2\frac{dy}{dx} + #3y}
+
+\begin{document}
+
+\maketitle
+
+\section{First Order Differential Equations(ODEs)}
+\subsection{Separable ODEs}
+A separable ODE is one in which the functions of both x and y can be separated.
+\begin{align*}
+    \frac{dy}{dx} &= \frac{g(x)}{f(y)} \\
+    \frac{dy}{dx} f(y) &= g(x)
+\end{align*}
+This can then be rearranged and integrated so that
+$$\int f(y) dy = \int g(x) dx\\$$
+\textrm{Example}
+\begin{align*}
+    \frac{dy}{dx} &= e^{x+y} = e^xe^y\\
+    \int e^{-y} dy &= \int e^x dx\\
+    -e^{-y} &= e^x + c\\
+    e^x + e^{-y} &= c\\
+\end{align*}
+$c$ is just a constant so its sign does not matter at this point.\\
+We can then solve explicitly for $y$. 
+\begin{align*}
+    e^{-y} &= c - e^x\\
+    y &= -\ln(c-e^x)
+\end{align*}
+\newpage
+
+\subsection{Boundary and Initial Conditions}
+The general solution to a 1st Order DE always contains one undefined constant of integration, like $c$. 
+A boundary (for x) or initial (for t) condition is given, typcially y(x) at a given x value.
+
+Example:
+T goes from 90$^\circ$c to 70$^\circ$c in 10 minutes(t), 
+the room temperature is 20$^\circ$c(T$_0$), find T after 20 minutes.
+\begin{align*}
+    \frac{dT}{dt} &= -\alpha(T-T_0)\\
+    \int \frac{dT}{T-T_0} &= -\alpha \int dt\\
+    \ln(T-T_0) &= -\alpha t + c\\
+    T-T_0 &= e^{-\alpha t + c} = Ae^{-\alpha t}\\
+    A &= e^c
+\end{align*}
+We can now use our initial conditions to solve for T(20)
+\begin{align*}
+    \textrm{When } t &= 0\\
+    T - T_0 &= 90 - 20 = 70\\
+    A &= 70\\
+    \textrm{When } t &= 10\\
+    T &= T_0 + Ae^{-\alpha t}\\
+    70 &= 20 + 70e^{-10\alpha }\\
+    e^{-10\alpha} &= \frac{70-20}{70} = \frac{5}{7}\\
+    \textrm{When } t &= 20\\
+    T &= 20 + 70e^{-20\alpha}\\
+    (e^{-10\alpha})^2 &= e^{-20\alpha}\\
+    T &= 20 + 70\left(\frac{5}{7}\right)^2 = 55.7^\circ c
+\end{align*}
+\newpage
+\subsection{Homoegeneous ODEs}
+Replace $y$ with $yt$ and $x$ with $xt$, if all the $t$s cancel then the ODE is homogeneous.
+\begin{align*}
+    \frac{dy}{dx} &= f\left(\frac{y}{x}\right)\\
+    \textrm{let }v &= \frac{y}{x} \textrm{ so } y = vx\\
+    \frac{dy}{dx} &= \frac{d}{dx}vx\\
+\end{align*}
+$v$ is a function of $x$ so we must use the product rule.
+\begin{align*}
+    \frac{dy}{dx} &= v + x\frac{dv}{dx} = f(v)\\
+    \frac{dv}{dx} &= \frac{f(v) - v}{x}\\
+\end{align*}
+This is now a separable function, and can be solved as before.
+
+Example: $y(1) = 1$
+\begin{align*}
+    \frac{dy}{dx} &= \frac{y}{x^2}(x-y) = \frac{y}{x} - \left(\frac{y}{x}\right)^2\\
+    \textrm{let }v &= \frac{y}{x} \textrm{ so } y = vx\\
+    \frac{dy}{dx} &= v + x\frac{dv}{dx} = v - v^2 \quad\textrm{ separable}\\
+    \int \frac{-dv}{v^2} &= \int \frac{dx}{x}\\
+    \frac{1}{v} &= \ln x + c = \frac{x}{y}\\
+    y &= \frac{x}{\ln x + c}\\
+    y(1) &= 1\\
+    1 &= \frac{1}{\ln(1) + c}\\
+    c &= 1\\
+\end{align*}
+\newpage
+\subsection{Linear ODEs}
+Linear ODEs always take the form of $$\frac{dy}{dx} + y\cdot P(x) = Q(x)$$
+When $Q(x) = 0$ this becomes a separable ODE and can be solved as before such that
+\begin{align*}
+    dy \cdot \frac{1}{y} &= -P(x) dx\\
+    y &= Ae^{\int -P(x)dx}\quad\textrm{where } A = e^c
+\end{align*}
+When $P(x) = 0$ this becomes a simple separable ODE and can be solved by integration.
+
+Recall the product rule $\frac{d}{dx}(u\cdot v) = u'v + uv'$\\
+This is strikingly close to our Linear ODE, except we are missing a factor, the integration factor, $\mu(x)$.
+We want $\mu$ to be such that $\mu' = P(x)\mu$, allow us to do some algebraic manipulation.
+\begin{align*}
+    \mu' &= P(x)\mu\\
+    P(x) &= \frac{\mu'}{\mu} = \frac{d}{dx}\ln(\mu)\\
+    \int P(x) dx &= \ln(\mu)\\
+    \mu &= e^{\int P(x) dx}
+\end{align*}
+We can then multiply by our integrating factor, then apply the chain rule, however this is best shown with an example.
+\begin{align*}
+    \cos(x)\frac{dy}{dx} + \sin(x)y &= 1\\
+    \frac{dy}{dx} + \tan(x)y &= \sec(x) \quad\textrm{Linear ODE}\\
+    \mu &= e^{\int \tan(x) dx}\\
+    \int \tan(x) dx &= \ln(sec(x))\\
+    \mu &= \sec(x) \quad\textrm{Multiply ODE by $\mu$}\\
+    \frac{dy}{dx}\sec(x) + \sec(x)\tan(x)y &= \sec^2(x)\\
+\end{align*}
+\newpage
+Since $\frac{d}{dx}\sec(x) = \sec(x)\tan(x)$ we should now be able to see how the LHS of our equation can be withdrawn 
+into its chain rule form.
+\begin{align*}
+    \frac{d}{dx}\sec(x)\cdot y &= \frac{dy}{dx}\sec(x) + \sec(x)\tan(x)y\\
+    \frac{d}{dx}\sec(x)\cdot y &= sec^2(x)\\
+    \sec(x) \cdot y &= \int \sec^2(x) = \tan(x) + c\\
+    y &= \sin(x) + c\cdot \cos(x)
+\end{align*}
+\subsection{Exact ODEs}
+When a variable in a multi variable function $f(x,y)$ has variables that rely on another e.g. 
+$y = y(t), x = x(t)$ then the derivative of that function is known as the total derivative and
+ is given as $$\frac{d}{dt}f(x,y) = \frac{\delta f}{\delta x} \frac{dx}{dt} + \frac{\delta f}{\delta y} \frac{dy}{dt}$$
+ This can also occur for when one variable is the function of another e.g. $x = x, y = y(x)$, the total derivative of such is 
+\begin{equation}
+\label{eqn:Total Derivative}
+\frac{d}{dx}f(x,y) = \frac{\delta f}{\delta x} + \frac{\delta f}{\delta x} \frac{dy}{dx}
+\end{equation}
+Exact ODEs take the form $$M(x,y) + N(x,y)\frac{dy}{dx}=0$$
+Where M and N must be separated by a plus. 
+As you can see, this is in the same form as a the derivative of the function from equation (1),
+ thus we can assume that $$\frac{\delta f}{\delta x} = M \quad \frac{\delta f}{\delta x} = N$$
+In order to verify this assumption we can test an 'exactness condition' 
+\begin{align*}
+    \frac{\delta^2f}{\delta x \delta y} &= \frac{\delta^2 f}{\delta y \delta x}\\
+    \frac{\delta M}{\delta x} &= \frac{\delta N}{\delta y}
+\end{align*}
+We must now find a function to satisfy these conditions, however this is best left to an example.
+\newpage
+\begin{align*}
+     x + y^2 + 2xy\frac{dy}{dx} &= 0\\
+     M = x + y^2 & \quad N = 2xy\\
+     \frac{\delta M}{\delta y} &= 2y\\
+     \frac{\delta N}{\delta x} &= 2y\\
+\end{align*}
+This satisfies the 'exactness condition', and so we can begin to find the function that solves the ODE.
+\begin{align*}
+    M &= \frac{\delta f}{\delta x}\\
+    \int M dx &= f = \frac{1}{2}x^2 + xy^2 + g(y)\\
+    N &= \frac{\delta f}{\delta y}\\
+    \int N dy &= f = xy^2 + h(x)\\
+\end{align*}
+For $\int M dx = \int N dy$ to be true their constants must satisfy each other, thus $g(y) = 0, h(x) = \frac{1}{2}x^2$
+$$f(x,y) = \frac{1}{2}x^2 + xy^2 + c = 0$$
+
+\newpage
+\section{Second Order ODEs}
+
+\subsection{Introduction}
+They take the form of
+\begin{align*}
+    m(x)\frac{d^2y}{dx^2} + p(x)\frac{dy}{dx} + q(x)y &= r(x)\\
+    r(x) &= 0 \quad\text{Homogeneous}\\
+    r(x) &\not= 0 \quad\text{Inhomogeneous}\\
+\end{align*}
+The general solution is 
+$$y(x) = Ay_1(x) + By_2(x)$$
+Where $y_1$ \& $y_2$ are two functions of x and A \& B are integration constants.
+We normally assume we have constant coefficients, as in driven oscillators.
+$$m\frac{d^2y}{dx^2} + b\frac{dy}{dx} + ky = F_0\cos(\omega t)$$
+
+\subsection{Homogeneous}
+Consider the second order homogeneous ODE
+$$\ODE{}{a}{b} = 0$$
+We normally take an educated guess at a solution, e.g. $y=e^{mx}$, where m is some constant. Thus 
+$$\frac{dy}{dx} = me^{mx} \quad\quad \frac{d^2y}{dx^2} = m^2e^{mx}$$
+Subbing this back into our original homogeneous equation and then dividing by $e^{mx}$ gives us
+\begin{align*}
+    (m^2 + am + b) &= 0 \quad\text{axuillary equation}\\
+    (m-m_1)(m-m_2) &= 0 \quad\text{$m_1$ \& $m_2$ are roots}\\
+\end{align*}
+There are three cases to consider, when $m_1$ \& $m_2$ are 
+\begin{enumerate}[label=\alph*.]
+    \item distinct and real 
+    \item distance and complex
+    \item the same
+\end{enumerate}
+
+\subsubsection{Case a.}
+Where $m_1 \not= m_2$ and both $m_1$ \& $m_2$ are real. From our educated guess we know
+$$y_1(x) = e^{m_1x} \quad\quad y_2(x) = e^{m_2x}$$
+So the general solution is 
+$$y(x) = Ae^{m_1x} + Be^{m_2x}$$
+Example:
+\begin{align*}
+    \ODE{3}{-5}{-2} &= 0\\
+    3m^2 - 5m - 2 &= 0 \quad\text{auxillary equation}\\
+    (3m+1)(m-2) &= 0\\
+    m_1 &= \frac{-1}{3}\\
+    m_2 &= 2\\
+    y(x) &= Ae^{-x/3} + Be^{2x} \quad\text{general solution}
+\end{align*}
+
+\subsubsection{Case b.}
+Where $m_1 \not= m_2$ and both $m_1$ \& $m_2$ are complex. We know that
+$$y_1(x) = e^{m_1x} \quad\quad y_2(x) = e^{m_2x}$$
+But now $y_1$ \& $y_2$ are complex.
+This means we can rewrite the general solution using Euler's Formula.
+\begin{align*}
+    \textrm{let}\quad m_1 &= \mu + i\lambda\\
+    \textrm{let}\quad m_2 &= \mu - i\lambda
+\end{align*}
+So the general solution is
+\begin{align*}
+    y(x) = Ae^{m_1x} + Be^{m_2x} &= Ae^{(\mu + i\lambda)x} + Be^{(\mu - i\lambda)x}\\
+    &= e^{\mu x}[Ae^{i\lambda x} + Be^{-i\lambda x}]\\
+    &= e^{\mu x}[A(\cos(\lambda x) + i\sin(\lambda x)) + B(\cos(\lambda x) - i\sin(\lambda x))]\\
+    &= e^{\mu x}[(A+B)(\cos(\lambda x) + (A-B)i\sin(\lambda x))\\
+    &= e^{\mu x}[(C)(\cos(\lambda x) + (D)\sin(\lambda x))\\
+\end{align*}
+The final general solution is
+\[e^{\mu x}[(C)(\cos(\lambda x) + (D)\sin(\lambda x))\]
+Where $C = A+B$ \& $D=i(A-B)$ are both integration constants.
+
+\subsubsection{Case c.}
+Where $m_1 = m_2$. Thus
+\[y_1 = e^{m_1x}\]
+So we need another solution. We will prove this in a later section.
+\begin{align*}
+    y_2(x) &= xe^{m_1x}\\
+    y(x) &= Ay_1(x) + By_2(x) \quad\text{general solution}\\
+    y(x) &= (A+Bx)e^{m_1x} 
+\end{align*}
+Example:
+\begin{align*}
+    \ODE{}{2}{} &= 0\\
+    m^2 + 2m + 1 &= (m+1)^2 = 0 \quad\text{auxillary equation}\\
+    m &= -1\\
+    y_1(x) &= e^{-x}\\
+    y_2(x) &= xe^{-x}\\
+    y(x) &= (A+Bx)e^{-x}\\ \quad\text{general solution}
+\end{align*}
+We can check that $y_2$ is a solution.
+\begin{align*}
+    \frac{dy_2}{dx} &= e^{-x}-xe^{-x} = (1-x)e^{-x}\\
+    \frac{d^2y_2}{dx^2} &= -e^{-x}-e^{-x}+xe^{-x} = (x-2)e^{-x}\\
+    \ODE{}{2}{} &= 0\\ \quad\text{original ODE}\\
+    [(x-2) + 2(1-x) + x]e^{-x} &= 0\\
+    0 &= 0
+\end{align*}
+\end{document}

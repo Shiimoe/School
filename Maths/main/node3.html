@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2019 (Released January 1, 2019) -->
+<HTML lang="EN">
+<HEAD>
+<TITLE>Boundary and Initial Conditions</TITLE>
+<META NAME="description" CONTENT="Boundary and Initial Conditions">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2019">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node4.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node1.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A
+ HREF="node4.html">Homoegeneous ODEs</A>
+<B> Up:</B> <A
+ HREF="node1.html">First Order Differential Equations(ODEs)</A>
+<B> Previous:</B> <A
+ HREF="node2.html">Separable ODEs</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00012000000000000000">
+Boundary and Initial Conditions</A>
+</H2>
+The general solution to a 1st Order DE always contains one undefined constant of integration, like <SPAN CLASS="MATH"><IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="img13.svg"
+ ALT="$c$"></SPAN>. 
+A boundary (for x) or initial (for t) condition is given, typcially y(x) at a given x value.
+
+<P>
+Example:
+T goes from 90<SPAN CLASS="MATH"><IMG STYLE="height: 1.83ex; vertical-align: -0.12ex; " SRC="img19.svg"
+ ALT="$^\circ$"></SPAN>c to 70<SPAN CLASS="MATH"><IMG STYLE="height: 1.83ex; vertical-align: -0.12ex; " SRC="img19.svg"
+ ALT="$^\circ$"></SPAN>c in 10 minutes(t), 
+the room temperature is 20<SPAN CLASS="MATH"><IMG STYLE="height: 1.83ex; vertical-align: -0.12ex; " SRC="img19.svg"
+ ALT="$^\circ$"></SPAN>c(T<SPAN CLASS="MATH"><IMG STYLE="height: 1.28ex; vertical-align: -0.46ex; " SRC="img20.svg"
+ ALT="$_0$"></SPAN>), find T after 20 minutes.
+<P></P>
+<DIV CLASS="mathdisplay"><TABLE CLASS="equation" >
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="img21.svg"
+ ALT="$\displaystyle \frac{dT}{dt}$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img22.svg"
+ ALT="$\displaystyle = -\alpha(T-T_0)$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.40ex; vertical-align: -2.12ex; " SRC="img23.svg"
+ ALT="$\displaystyle \int \frac{dT}{T-T_0}$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.37ex; vertical-align: -2.12ex; " SRC="img24.svg"
+ ALT="$\displaystyle = -\alpha \int dt$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img25.svg"
+ ALT="$\displaystyle \ln(T-T_0)$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.85ex; vertical-align: -0.31ex; " SRC="img26.svg"
+ ALT="$\displaystyle = -\alpha t + c$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.16ex; vertical-align: -0.46ex; " SRC="img27.svg"
+ ALT="$\displaystyle T-T_0$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.19ex; vertical-align: -0.12ex; " SRC="img28.svg"
+ ALT="$\displaystyle = e^{-\alpha t + c} = Ae^{-\alpha t}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.81ex; vertical-align: -0.12ex; " SRC="img29.svg"
+ ALT="$\displaystyle A$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.89ex; vertical-align: -0.12ex; " SRC="img30.svg"
+ ALT="$\displaystyle = e^c$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+We can now use our initial conditions to solve for T(20)
+<P></P>
+<DIV CLASS="mathdisplay"><TABLE CLASS="equation" >
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.84ex; vertical-align: -0.12ex; " SRC="img31.svg"
+ ALT="$\displaystyle \textrm{When } t$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.72ex; vertical-align: -0.12ex; " SRC="img32.svg"
+ ALT="$\displaystyle = 0$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.16ex; vertical-align: -0.46ex; " SRC="img27.svg"
+ ALT="$\displaystyle T-T_0$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.92ex; vertical-align: -0.31ex; " SRC="img33.svg"
+ ALT="$\displaystyle = 90 - 20 = 70$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.81ex; vertical-align: -0.12ex; " SRC="img29.svg"
+ ALT="$\displaystyle A$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.72ex; vertical-align: -0.12ex; " SRC="img34.svg"
+ ALT="$\displaystyle = 70$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.84ex; vertical-align: -0.12ex; " SRC="img31.svg"
+ ALT="$\displaystyle \textrm{When } t$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.72ex; vertical-align: -0.12ex; " SRC="img35.svg"
+ ALT="$\displaystyle = 10$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.81ex; vertical-align: -0.12ex; " SRC="img36.svg"
+ ALT="$\displaystyle T$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.54ex; vertical-align: -0.46ex; " SRC="img37.svg"
+ ALT="$\displaystyle = T_0 + Ae^{-\alpha t}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.72ex; vertical-align: -0.12ex; " SRC="img38.svg"
+ ALT="$\displaystyle 70$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.42ex; vertical-align: -0.31ex; " SRC="img39.svg"
+ ALT="$\displaystyle = 20 + 70e^{-10\alpha }$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.23ex; vertical-align: -0.12ex; " SRC="img40.svg"
+ ALT="$\displaystyle e^{-10\alpha}$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.88ex; vertical-align: -1.71ex; " SRC="img41.svg"
+ ALT="$\displaystyle = \frac{70-20}{70} = \frac{5}{7}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.84ex; vertical-align: -0.12ex; " SRC="img31.svg"
+ ALT="$\displaystyle \textrm{When } t$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.72ex; vertical-align: -0.12ex; " SRC="img42.svg"
+ ALT="$\displaystyle = 20$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.81ex; vertical-align: -0.12ex; " SRC="img36.svg"
+ ALT="$\displaystyle T$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.42ex; vertical-align: -0.31ex; " SRC="img43.svg"
+ ALT="$\displaystyle = 20 + 70e^{-20\alpha}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.81ex; vertical-align: -0.70ex; " SRC="img44.svg"
+ ALT="$\displaystyle (e^{-10\alpha})^2$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.23ex; vertical-align: -0.12ex; " SRC="img45.svg"
+ ALT="$\displaystyle = e^{-20\alpha}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.81ex; vertical-align: -0.12ex; " SRC="img36.svg"
+ ALT="$\displaystyle T$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 6.26ex; vertical-align: -2.32ex; " SRC="img46.svg"
+ ALT="$\displaystyle = 20 + 70\left(\frac{5}{7}\right)^2 = 55.7^\circ c$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node1.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A
+ HREF="node4.html">Homoegeneous ODEs</A>
+<B> Up:</B> <A
+ HREF="node1.html">First Order Differential Equations(ODEs)</A>
+<B> Previous:</B> <A
+ HREF="node2.html">Separable ODEs</A></DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

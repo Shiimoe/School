@@ -1,0 +1,880 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.9)  14 FEB 2020 13:51
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./images.tex
+(./images.tex
+LaTeX2e <2019-10-01> patch level 1
+
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2019/04/01 v2.17c AMS math features
+\@mathmargin=\skip43
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen103
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2855.
+LaTeX Info: Redefining \] on input line 2856.
+) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+) (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+\sizebox=\box29
+\lthtmlwrite=\write3
+(/usr/share/texmf-dist/tex/latex/preview/preview.sty
+Package: preview 2017/04/24 11.91 (AUCTeX/preview-latex)
+(/usr/share/texmf-dist/tex/generic/luatex85/luatex85.sty
+Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
+) (/usr/share/texmf-dist/tex/latex/preview/prtightpage.def
+\PreviewBorder=\dimen112
+)
+\pr@snippet=\count100
+\pr@box=\box30
+\pr@output=\toks21
+)
+\lthtmlPageBox=\box31
+\lthtmlCropMarkHeight=\dimen113
+\lthtmlCropMarkDepth=\dimen114
+! Too many }'s.
+l.75 ...preview}\copy\lthtmlPageBox\end{preview}}}
+                                                  %
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+No file images.aux.
+\openout1 = `images.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count101
+\scratchdimen=\dimen115
+\scratchbox=\box32
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen116
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
+\everyMPtoPDFconversion=\toks23
+)
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+
+latex2htmlLength hsize=349.0pt
+
+latex2htmlLength vsize=633.0pt
+
+latex2htmlLength hoffset=0.0pt
+
+latex2htmlLength voffset=0.0pt
+
+latex2htmlLength topmargin=0.0pt
+
+latex2htmlLength topskip=0.00003pt
+
+latex2htmlLength headheight=0.0pt
+
+latex2htmlLength headsep=0.0pt
+
+latex2htmlLength parskip=10.00002pt
+
+latex2htmlLength oddsidemargin=62.0pt
+
+latex2htmlLength evensidemargin=62.0pt
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 147
+.
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 147
+.
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+:tex2html_wrap_indisplay307:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay307:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+Preview: Tightpage -32891 -32891 32891 32891
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+:tex2html_wrap_indisplay308:lthtmlCropMarkHeight:=20.26508pt
+
+:tex2html_wrap_indisplay308:lthtmlCropMarkDepth:=9.35951pt:1ex:=4.30554pt
+[2]
+
+:tex2html_wrap_indisplay309:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay309:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[3]
+
+:tex2html_wrap_indisplay310:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_indisplay310:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[4]
+
+:tex2html_wrap_indisplay312:lthtmlCropMarkHeight:=19.61122pt
+
+:tex2html_wrap_indisplay312:lthtmlCropMarkDepth:=8.61124pt:1ex:=4.30554pt
+[5]
+
+:tex2html_wrap_indisplay314:lthtmlCropMarkHeight:=14.46227pt
+
+:tex2html_wrap_indisplay314:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[6]
+
+:tex2html_wrap_indisplay315:lthtmlCropMarkHeight:=19.61122pt
+
+:tex2html_wrap_indisplay315:lthtmlCropMarkDepth:=8.61124pt:1ex:=4.30554pt
+[7]
+
+:tex2html_wrap_indisplay316:lthtmlCropMarkHeight:=19.61122pt
+
+:tex2html_wrap_indisplay316:lthtmlCropMarkDepth:=8.61124pt:1ex:=4.30554pt
+[8]
+
+:tex2html_wrap_indisplay317:lthtmlCropMarkHeight:=14.46227pt
+
+:tex2html_wrap_indisplay317:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[9]
+
+:tex2html_wrap_indisplay318:lthtmlCropMarkHeight:=13.1428pt
+
+:tex2html_wrap_indisplay318:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[10]
+
+:tex2html_wrap_indisplay319:lthtmlCropMarkHeight:=14.46227pt
+
+:tex2html_wrap_indisplay319:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[11]
+
+:tex2html_wrap_indisplay320:lthtmlCropMarkHeight:=10.30554pt
+
+:tex2html_wrap_indisplay320:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[12]
+
+:tex2html_wrap_inline322:lthtmlCropMarkHeight:=10.30554pt
+
+:tex2html_wrap_inline322:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[13]
+
+:tex2html_wrap_inline324:lthtmlCropMarkHeight:=10.30554pt
+
+:tex2html_wrap_inline324:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.30554pt
+[14]
+
+:tex2html_wrap_indisplay325:lthtmlCropMarkHeight:=14.46227pt
+
+:tex2html_wrap_indisplay325:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[15]
+
+:tex2html_wrap_indisplay326:lthtmlCropMarkHeight:=13.1428pt
+
+:tex2html_wrap_indisplay326:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[16]
+
+:tex2html_wrap_indisplay327:lthtmlCropMarkHeight:=10.30554pt
+
+:tex2html_wrap_indisplay327:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.30554pt
+[17]
+
+:tex2html_wrap_indisplay328:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_indisplay328:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[18]
+
+:tex2html_wrap_inline333:lthtmlCropMarkHeight:=12.88586pt
+
+:tex2html_wrap_inline333:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[19]
+
+:tex2html_wrap_inline339:lthtmlCropMarkHeight:=9.01112pt
+
+:tex2html_wrap_inline339:lthtmlCropMarkDepth:=1.49998pt:1ex:=4.30554pt
+[20]
+
+:tex2html_wrap_indisplay340:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay340:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[21]
+
+:tex2html_wrap_indisplay341:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_indisplay341:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[22]
+
+:tex2html_wrap_indisplay342:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay342:lthtmlCropMarkDepth:=8.61124pt:1ex:=4.30554pt
+[23]
+
+:tex2html_wrap_indisplay343:lthtmlCropMarkHeight:=19.61122pt
+
+:tex2html_wrap_indisplay343:lthtmlCropMarkDepth:=8.61124pt:1ex:=4.30554pt
+[24]
+
+:tex2html_wrap_indisplay344:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_indisplay344:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[25]
+
+:tex2html_wrap_indisplay345:lthtmlCropMarkHeight:=12.15079pt
+
+:tex2html_wrap_indisplay345:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[26]
+
+:tex2html_wrap_indisplay346:lthtmlCropMarkHeight:=12.83331pt
+
+:tex2html_wrap_indisplay346:lthtmlCropMarkDepth:=1.49998pt:1ex:=4.30554pt
+[27]
+
+:tex2html_wrap_indisplay347:lthtmlCropMarkHeight:=14.46227pt
+
+:tex2html_wrap_indisplay347:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[28]
+
+:tex2html_wrap_indisplay348:lthtmlCropMarkHeight:=12.83331pt
+
+:tex2html_wrap_indisplay348:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[29]
+
+:tex2html_wrap_indisplay349:lthtmlCropMarkHeight:=13.1428pt
+
+:tex2html_wrap_indisplay349:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[30]
+
+:tex2html_wrap_indisplay350:lthtmlCropMarkHeight:=12.94444pt
+
+:tex2html_wrap_indisplay350:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[31]
+
+:tex2html_wrap_indisplay351:lthtmlCropMarkHeight:=12.44444pt
+
+:tex2html_wrap_indisplay351:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[32]
+
+:tex2html_wrap_indisplay353:lthtmlCropMarkHeight:=12.44444pt
+
+:tex2html_wrap_indisplay353:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[33]
+
+:tex2html_wrap_indisplay355:lthtmlCropMarkHeight:=12.44444pt
+
+:tex2html_wrap_indisplay355:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[34]
+
+:tex2html_wrap_indisplay357:lthtmlCropMarkHeight:=12.44444pt
+
+:tex2html_wrap_indisplay357:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[35]
+
+:tex2html_wrap_indisplay358:lthtmlCropMarkHeight:=12.83331pt
+
+:tex2html_wrap_indisplay358:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[36]
+
+:tex2html_wrap_indisplay359:lthtmlCropMarkHeight:=14.46227pt
+
+:tex2html_wrap_indisplay359:lthtmlCropMarkDepth:=1.49998pt:1ex:=4.30554pt
+[37]
+
+:tex2html_wrap_indisplay360:lthtmlCropMarkHeight:=12.44444pt
+
+:tex2html_wrap_indisplay360:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[38]
+
+:tex2html_wrap_indisplay361:lthtmlCropMarkHeight:=14.64003pt
+
+:tex2html_wrap_indisplay361:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[39]
+
+:tex2html_wrap_indisplay362:lthtmlCropMarkHeight:=14.64003pt
+
+:tex2html_wrap_indisplay362:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[40]
+
+:tex2html_wrap_indisplay363:lthtmlCropMarkHeight:=19.20952pt
+
+:tex2html_wrap_indisplay363:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[41]
+
+:tex2html_wrap_indisplay365:lthtmlCropMarkHeight:=12.44444pt
+
+:tex2html_wrap_indisplay365:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[42]
+
+:tex2html_wrap_indisplay367:lthtmlCropMarkHeight:=14.64003pt
+
+:tex2html_wrap_indisplay367:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[43]
+
+:tex2html_wrap_indisplay368:lthtmlCropMarkHeight:=14.64003pt
+
+:tex2html_wrap_indisplay368:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[44]
+
+:tex2html_wrap_indisplay369:lthtmlCropMarkHeight:=14.64003pt
+
+:tex2html_wrap_indisplay369:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[45]
+
+:tex2html_wrap_indisplay371:lthtmlCropMarkHeight:=22.53902pt
+
+:tex2html_wrap_indisplay371:lthtmlCropMarkDepth:=9.50012pt:1ex:=4.30554pt
+[46]
+
+:tex2html_wrap_inline376:lthtmlCropMarkHeight:=12.15079pt
+
+:tex2html_wrap_inline376:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.30554pt
+[47]
+
+:tex2html_wrap_inline378:lthtmlCropMarkHeight:=10.30554pt
+
+:tex2html_wrap_inline378:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[48]
+
+:tex2html_wrap_inline380:lthtmlCropMarkHeight:=12.15079pt
+
+:tex2html_wrap_inline380:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[49]
+
+:tex2html_wrap_inline382:lthtmlCropMarkHeight:=12.15079pt
+
+:tex2html_wrap_inline382:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[50]
+
+:tex2html_wrap_indisplay384:lthtmlCropMarkHeight:=17.50008pt
+
+:tex2html_wrap_indisplay384:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[51]
+
+:tex2html_wrap_indisplay385:lthtmlCropMarkHeight:=12.94444pt
+
+:tex2html_wrap_indisplay385:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[52]
+
+:tex2html_wrap_indisplay386:lthtmlCropMarkHeight:=17.07062pt
+
+:tex2html_wrap_indisplay386:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[53]
+
+:tex2html_wrap_indisplay388:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay388:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[54]
+
+:tex2html_wrap_inline390:lthtmlCropMarkHeight:=10.30554pt
+
+:tex2html_wrap_inline390:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[55]
+
+:tex2html_wrap_indisplay394:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay394:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[56]
+
+:tex2html_wrap_indisplay395:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay395:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[57]
+
+:tex2html_wrap_indisplay396:lthtmlCropMarkHeight:=20.26508pt
+
+:tex2html_wrap_indisplay396:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[58]
+
+:tex2html_wrap_inline398:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline398:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[59]
+
+:tex2html_wrap_indisplay400:lthtmlCropMarkHeight:=19.53899pt
+
+:tex2html_wrap_indisplay400:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[60]
+
+:tex2html_wrap_indisplay404:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay404:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[61]
+
+:tex2html_wrap_indisplay405:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay405:lthtmlCropMarkDepth:=8.61124pt:1ex:=4.30554pt
+[62]
+
+:tex2html_wrap_indisplay406:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay406:lthtmlCropMarkDepth:=8.61124pt:1ex:=4.30554pt
+[63]
+
+:tex2html_wrap_indisplay407:lthtmlCropMarkHeight:=19.20952pt
+
+:tex2html_wrap_indisplay407:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[64]
+
+:tex2html_wrap_indisplay408:lthtmlCropMarkHeight:=17.07062pt
+
+:tex2html_wrap_indisplay408:lthtmlCropMarkDepth:=8.80396pt:1ex:=4.30554pt
+[65]
+
+:tex2html_wrap_indisplay410:lthtmlCropMarkHeight:=17.07062pt
+
+:tex2html_wrap_indisplay410:lthtmlCropMarkDepth:=7.69284pt:1ex:=4.30554pt
+[66]
+
+:tex2html_wrap_indisplay411:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_indisplay411:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[67]
+
+:tex2html_wrap_indisplay412:lthtmlCropMarkHeight:=12.44444pt
+
+:tex2html_wrap_indisplay412:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[68]
+
+:tex2html_wrap_indisplay413:lthtmlCropMarkHeight:=12.44444pt
+
+:tex2html_wrap_indisplay413:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[69]
+
+:tex2html_wrap_indisplay414:lthtmlCropMarkHeight:=19.20952pt
+
+:tex2html_wrap_indisplay414:lthtmlCropMarkDepth:=9.35951pt:1ex:=4.30554pt
+[70]
+
+:tex2html_wrap_indisplay415:lthtmlCropMarkHeight:=10.30554pt
+
+:tex2html_wrap_indisplay415:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[71]
+
+:tex2html_wrap_indisplay419:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay419:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[72]
+
+:tex2html_wrap_inline421:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline421:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[73]
+
+:tex2html_wrap_indisplay422:lthtmlCropMarkHeight:=19.20952pt
+
+:tex2html_wrap_indisplay422:lthtmlCropMarkDepth:=8.80396pt:1ex:=4.30554pt
+[74]
+
+:tex2html_wrap_indisplay423:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_indisplay423:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[75]
+
+:tex2html_wrap_indisplay425:lthtmlCropMarkHeight:=15.76784pt
+
+:tex2html_wrap_indisplay425:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[76]
+
+:tex2html_wrap_inline427:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline427:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[77]
+
+:tex2html_wrap_inline429:lthtmlCropMarkHeight:=14.79842pt
+
+:tex2html_wrap_inline429:lthtmlCropMarkDepth:=3.44841pt:1ex:=4.30554pt
+[78]
+
+:tex2html_wrap_inline431:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline431:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[79]
+
+:tex2html_wrap_inline433:lthtmlCropMarkHeight:=10.30554pt
+
+:tex2html_wrap_inline433:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.30554pt
+[80]
+
+:tex2html_wrap_inline435:lthtmlCropMarkHeight:=13.51782pt
+
+:tex2html_wrap_inline435:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[81]
+
+:tex2html_wrap_indisplay436:lthtmlCropMarkHeight:=14.01782pt
+
+:tex2html_wrap_indisplay436:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.30554pt
+[82]
+
+:tex2html_wrap_indisplay437:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_indisplay437:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[83]
+
+:tex2html_wrap_indisplay438:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_indisplay438:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[84]
+
+:tex2html_wrap_indisplay439:lthtmlCropMarkHeight:=20.2829pt
+
+:tex2html_wrap_indisplay439:lthtmlCropMarkDepth:=8.80396pt:1ex:=4.30554pt
+[85]
+
+:tex2html_wrap_indisplay440:lthtmlCropMarkHeight:=19.61122pt
+
+:tex2html_wrap_indisplay440:lthtmlCropMarkDepth:=8.61124pt:1ex:=4.30554pt
+[86]
+
+:tex2html_wrap_indisplay441:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_indisplay441:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[87]
+
+:tex2html_wrap_indisplay442:lthtmlCropMarkHeight:=10.30554pt
+
+:tex2html_wrap_indisplay442:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.30554pt
+[88]
+
+:tex2html_wrap_indisplay443:lthtmlCropMarkHeight:=15.76784pt
+
+:tex2html_wrap_indisplay443:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[89]
+
+:tex2html_wrap_indisplay444:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay444:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[90]
+
+:tex2html_wrap_indisplay446:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay446:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[91]
+
+:tex2html_wrap_indisplay447:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_indisplay447:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[92]
+
+:tex2html_wrap_indisplay449:lthtmlCropMarkHeight:=15.76784pt
+
+:tex2html_wrap_indisplay449:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[93]
+
+:tex2html_wrap_indisplay450:lthtmlCropMarkHeight:=19.61122pt
+
+:tex2html_wrap_indisplay450:lthtmlCropMarkDepth:=8.61124pt:1ex:=4.30554pt
+[94]
+
+:tex2html_wrap_indisplay451:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_indisplay451:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[95]
+
+:tex2html_wrap_indisplay453:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_indisplay453:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[96]
+
+:tex2html_wrap_indisplay454:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay454:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[97]
+
+:tex2html_wrap_indisplay455:lthtmlCropMarkHeight:=14.64003pt
+
+:tex2html_wrap_indisplay455:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[98]
+
+:tex2html_wrap_inline457:lthtmlCropMarkHeight:=14.79842pt
+
+:tex2html_wrap_inline457:lthtmlCropMarkDepth:=3.44841pt:1ex:=4.30554pt
+[99]
+
+:tex2html_wrap_indisplay458:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay458:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[100]
+
+:tex2html_wrap_indisplay459:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay459:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[101]
+
+:tex2html_wrap_indisplay462:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_indisplay462:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[102]
+
+:tex2html_wrap_indisplay463:lthtmlCropMarkHeight:=19.61122pt
+
+:tex2html_wrap_indisplay463:lthtmlCropMarkDepth:=8.61124pt:1ex:=4.30554pt
+[103]
+
+:tex2html_wrap_indisplay465:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_indisplay465:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[104]
+
+:tex2html_wrap_inline468:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline468:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[105]
+
+:tex2html_wrap_inline470:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline470:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[106]
+
+:tex2html_wrap_indisplay472:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay472:lthtmlCropMarkDepth:=8.80396pt:1ex:=4.30554pt
+[107]
+
+:tex2html_wrap_inline474:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline474:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[108]
+
+:tex2html_wrap_indisplay476:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay476:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[109]
+
+:tex2html_wrap_indisplay478:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay478:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[110]
+
+:tex2html_wrap_indisplay480:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay480:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[111]
+
+:tex2html_wrap_indisplay481:lthtmlCropMarkHeight:=20.9051pt
+
+:tex2html_wrap_indisplay481:lthtmlCropMarkDepth:=8.80396pt:1ex:=4.30554pt
+[112]
+
+:tex2html_wrap_indisplay482:lthtmlCropMarkHeight:=20.9051pt
+
+:tex2html_wrap_indisplay482:lthtmlCropMarkDepth:=8.80396pt:1ex:=4.30554pt
+[113]
+
+:tex2html_wrap_indisplay483:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay483:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[114]
+
+:tex2html_wrap_indisplay484:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay484:lthtmlCropMarkDepth:=8.80396pt:1ex:=4.30554pt
+[115]
+
+:tex2html_wrap_indisplay485:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay485:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[116]
+
+:tex2html_wrap_indisplay487:lthtmlCropMarkHeight:=14.64003pt
+
+:tex2html_wrap_indisplay487:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.30554pt
+[117]
+
+:tex2html_wrap_indisplay488:lthtmlCropMarkHeight:=12.83331pt
+
+:tex2html_wrap_indisplay488:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.30554pt
+[118]
+
+:tex2html_wrap_indisplay489:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay489:lthtmlCropMarkDepth:=8.80396pt:1ex:=4.30554pt
+[119]
+
+:tex2html_wrap_indisplay490:lthtmlCropMarkHeight:=12.44444pt
+
+:tex2html_wrap_indisplay490:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.30554pt
+[120]
+
+:tex2html_wrap_indisplay491:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay491:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[121]
+
+:tex2html_wrap_indisplay493:lthtmlCropMarkHeight:=12.83331pt
+
+:tex2html_wrap_indisplay493:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[122]
+
+:tex2html_wrap_indisplay494:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay494:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[123]
+
+:tex2html_wrap_indisplay495:lthtmlCropMarkHeight:=19.61122pt
+
+:tex2html_wrap_indisplay495:lthtmlCropMarkDepth:=8.61124pt:1ex:=4.30554pt
+[124]
+
+:tex2html_wrap_indisplay496:lthtmlCropMarkHeight:=19.20952pt
+
+:tex2html_wrap_indisplay496:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[125]
+
+:tex2html_wrap_indisplay497:lthtmlCropMarkHeight:=12.83331pt
+
+:tex2html_wrap_indisplay497:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[126]
+
+:tex2html_wrap_indisplay498:lthtmlCropMarkHeight:=19.70952pt
+
+:tex2html_wrap_indisplay498:lthtmlCropMarkDepth:=8.80396pt:1ex:=4.30554pt
+[127]
+
+:tex2html_wrap_indisplay499:lthtmlCropMarkHeight:=19.61122pt
+
+:tex2html_wrap_indisplay499:lthtmlCropMarkDepth:=8.61124pt:1ex:=4.30554pt
+[128]
+
+:tex2html_wrap_indisplay500:lthtmlCropMarkHeight:=14.64003pt
+
+:tex2html_wrap_indisplay500:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[129]
+
+:tex2html_wrap_inline502:lthtmlCropMarkHeight:=14.0556pt
+
+:tex2html_wrap_inline502:lthtmlCropMarkDepth:=3.05562pt:1ex:=4.30554pt
+[130]
+
+:tex2html_wrap_inline504:lthtmlCropMarkHeight:=14.44843pt
+
+:tex2html_wrap_inline504:lthtmlCropMarkDepth:=3.44841pt:1ex:=4.30554pt
+[131]
+
+:tex2html_wrap_indisplay506:lthtmlCropMarkHeight:=19.20952pt
+
+:tex2html_wrap_indisplay506:lthtmlCropMarkDepth:=6.85951pt:1ex:=4.30554pt
+[132] (./images.aux) ) 
+Here is how much of TeX's memory you used:
+ 2530 strings out of 492167
+ 28984 string characters out of 6131559
+ 94671 words of memory out of 5000000
+ 6909 multiletter control sequences out of 15000+600000
+ 5339 words of font info for 22 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 30i,8n,37p,224b,121s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cme
+x10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on images.pdf (132 pages, 108950 bytes).
+PDF statistics:
+ 462 PDF objects out of 1000 (max. 8388607)
+ 316 compressed objects within 4 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

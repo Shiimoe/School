@@ -1,0 +1,19 @@
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{mhchem}
+
+\newcommand{\super}{\textsuperscript}
+\newcommand{\numero}{N\super{\underline{o}}}
+
+\newcommand\bfit[1]{\textbf{\textit{#1}}}
+
+\newlist{questions}{enumerate}{2}
+\setlist[questions,1]{align=left,label={\bfseries\large {Question} \numero\arabic*.}}
+\setlist[questions,2]{align=left,label={(\alph*)}}
+\newcommand\question[1]{{\large \item\ #1}}1
+
+\newcommand\paren[1]{\left(#1\right)}
+
+\renewcommand{\thesection}{\S\,\arabic{section}}
+\renewcommand{\thesubsection}{\thesection{}.\,\arabic{subsection}}
