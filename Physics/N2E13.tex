@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{tikz}
+\input{header.tex}
+\setlength{\parskip}{1em}
+
+\title{Newton to Einstein: Set 13}
+\author{Samuel J. Frost}
+\date{18\textsuperscript{th} of February, 2020}
+
+\begin{document}
+\maketitle
+\section{Question 1}
+\subsection{Part a}
+\begin{tikzpicture}[thick,scale=1.5, every node/.style={transform shape}]
+
+    \draw[thick,->] (0,0) -- (2,0) node[anchor=north west] {$\quad$x-axis/m};
+    \draw[thick,->] (0,0) -- (0,3) node[anchor=south east] {y-axis/m};
+    \draw[thick,->] (0,0) -- (-2,0);
+    \foreach \x in {-2,-1,0,1,2}
+        \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+    \foreach \y in {1,2,3}
+        \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+
+    \draw[ultra thick, indianred, <-] (0,2) -- (1,0) node[anchor=south west, scale=0.75] {$+q_1$};
+    \draw[ultra thick, indianred, <-] (0,2) -- (-1,0) node[anchor=south east, scale=0.75] {$+q_1$};
+    \draw[ultra thick, steelblue, ->] (0,2) -- (0,0) node[anchor=south east, scale=0.75] {$-q_1$};
+    \draw[indianred] (0.5,0) arc (0:-64:-0.5);
+    
+\end{tikzpicture}
+
+
+\end{document}

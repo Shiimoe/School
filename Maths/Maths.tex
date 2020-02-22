@@ -134,34 +134,34 @@ into its chain rule form.
 \subsection{Exact ODEs}
 When a variable in a multi variable function $f(x,y)$ has variables that rely on another e.g. 
 $y = y(t), x = x(t)$ then the derivative of that function is known as the total derivative and
- is given as $$\frac{d}{dt}f(x,y) = \frac{\delta f}{\delta x} \frac{dx}{dt} + \frac{\delta f}{\delta y} \frac{dy}{dt}$$
+ is given as $$\frac{d}{dt}f(x,y) = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}$$
  This can also occur for when one variable is the function of another e.g. $x = x, y = y(x)$, the total derivative of such is 
 \begin{equation}
 \label{eqn:Total Derivative}
-\frac{d}{dx}f(x,y) = \frac{\delta f}{\delta x} + \frac{\delta f}{\delta x} \frac{dy}{dx}
+\frac{d}{dx}f(x,y) = \frac{\partial f}{\partial x} + \frac{\partial f}{\partial y} \frac{dy}{dx}
 \end{equation}
 Exact ODEs take the form $$M(x,y) + N(x,y)\frac{dy}{dx}=0$$
 Where M and N must be separated by a plus. 
 As you can see, this is in the same form as a the derivative of the function from equation (1),
- thus we can assume that $$\frac{\delta f}{\delta x} = M \quad \frac{\delta f}{\delta x} = N$$
+ thus we can assume that $$\frac{\partial f}{\partial x} = M \quad \frac{\partial f}{\partial y} = N$$
 In order to verify this assumption we can test an 'exactness condition' 
 \begin{align*}
-    \frac{\delta^2f}{\delta x \delta y} &= \frac{\delta^2 f}{\delta y \delta x}\\
-    \frac{\delta M}{\delta x} &= \frac{\delta N}{\delta y}
+    \frac{\partial^2f}{\partial x \partial y} &= \frac{\partial^2 f}{\partial y \partial x}\\
+    \frac{\partial M}{\partial y} &= \frac{\partial N}{\partial x}
 \end{align*}
 We must now find a function to satisfy these conditions, however this is best left to an example.
 \newpage
 \begin{align*}
      x + y^2 + 2xy\frac{dy}{dx} &= 0\\
      M = x + y^2 & \quad N = 2xy\\
-     \frac{\delta M}{\delta y} &= 2y\\
-     \frac{\delta N}{\delta x} &= 2y\\
+     \frac{\partial M}{\partial y} &= 2y\\
+     \frac{\partial N}{\partial x} &= 2y\\
 \end{align*}
 This satisfies the 'exactness condition', and so we can begin to find the function that solves the ODE.
 \begin{align*}
-    M &= \frac{\delta f}{\delta x}\\
+    M &= \frac{\partial f}{\partial x}\\
     \int M dx &= f = \frac{1}{2}x^2 + xy^2 + g(y)\\
-    N &= \frac{\delta f}{\delta y}\\
+    N &= \frac{\partial f}{\partial y}\\
     \int N dy &= f = xy^2 + h(x)\\
 \end{align*}
 For $\int M dx = \int N dy$ to be true their constants must satisfy each other, thus $g(y) = 0, h(x) = \frac{1}{2}x^2$

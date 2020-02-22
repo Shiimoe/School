@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2019 (Released January 1, 2019) -->
+<HTML lang="EN">
+<HEAD>
+<TITLE>Linear ODEs</TITLE>
+<META NAME="description" CONTENT="Linear ODEs">
+<META NAME="keywords" CONTENT="Maths">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2019">
+
+<LINK REL="STYLESHEET" HREF="Maths.css">
+
+<LINK REL="next" HREF="node6.html">
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="next" HREF="node6.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node1.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A
+ HREF="node6.html">Exact ODEs</A>
+<B> Up:</B> <A
+ HREF="node1.html">First Order Differential Equations(ODEs)</A>
+<B> Previous:</B> <A
+ HREF="node4.html">Homoegeneous ODEs</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00014000000000000000">
+Linear ODEs</A>
+</H2>
+Linear ODEs always take the form of <P><!-- MATH
+ \begin{displaymath}
+\frac{dy}{dx} + y\cdot P(x) = Q(x)
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="img72.svg"
+ ALT="$\displaystyle \frac{dy}{dx} + y\cdot P(x) = Q(x)$">
+</DIV><P></P>
+When <SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img73.svg"
+ ALT="$Q(x) = 0$"></SPAN> this becomes a separable ODE and can be solved as before such that
+<P></P>
+<DIV CLASS="mathdisplay"><TABLE CLASS="equation" >
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.33ex; vertical-align: -2.16ex; " SRC="img74.svg"
+ ALT="$\displaystyle dy \cdot \frac{1}{y}$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img75.svg"
+ ALT="$\displaystyle = -P(x) dx$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.68ex; vertical-align: -0.57ex; " SRC="img17.svg"
+ ALT="$\displaystyle y$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.12ex; " SRC="img76.svg"
+ ALT="$\displaystyle = Ae^{\int -P(x)dx}\quad\textrm{where } A = e^c$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+When <SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img77.svg"
+ ALT="$P(x) = 0$"></SPAN> this becomes a simple separable ODE and can be solved by integration.
+
+<P>
+Recall the product rule <!-- MATH
+ $\frac{d}{dx}(u\cdot v) = u'v + uv'$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.07ex; vertical-align: -0.92ex; " SRC="img78.svg"
+ ALT="$\frac{d}{dx}(u\cdot v) = u'v + uv'$"></SPAN>
+<BR>
+This is strikingly close to our Linear ODE, except we are missing a factor, the integration factor, <SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img79.svg"
+ ALT="$\mu(x)$"></SPAN>.
+We want <SPAN CLASS="MATH"><IMG STYLE="height: 1.68ex; vertical-align: -0.57ex; " SRC="img80.svg"
+ ALT="$\mu$"></SPAN> to be such that <!-- MATH
+ $\mu' = P(x)\mu$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img81.svg"
+ ALT="$\mu' = P(x)\mu$"></SPAN>, allow us to do some algebraic manipulation.
+<P></P>
+<DIV CLASS="mathdisplay"><TABLE CLASS="equation" >
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.54ex; vertical-align: -0.57ex; " SRC="img82.svg"
+ ALT="$\displaystyle \mu'$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img83.svg"
+ ALT="$\displaystyle = P(x)\mu$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img84.svg"
+ ALT="$\displaystyle P(x)$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.57ex; vertical-align: -2.16ex; " SRC="img85.svg"
+ ALT="$\displaystyle = \frac{\mu'}{\mu} = \frac{d}{dx}\ln(\mu)$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.37ex; vertical-align: -2.12ex; " SRC="img86.svg"
+ ALT="$\displaystyle \int P(x) dx$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img87.svg"
+ ALT="$\displaystyle = \ln(\mu)$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.68ex; vertical-align: -0.57ex; " SRC="img88.svg"
+ ALT="$\displaystyle \mu$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.12ex; " SRC="img89.svg"
+ ALT="$\displaystyle = e^{\int P(x) dx}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+We can then multiply by our integrating factor, then apply the chain rule, however this is best shown with an example.
+<P></P>
+<DIV CLASS="mathdisplay"><TABLE CLASS="equation" >
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="img90.svg"
+ ALT="$\displaystyle \cos(x)\frac{dy}{dx} + \sin(x)y$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.72ex; vertical-align: -0.12ex; " SRC="img68.svg"
+ ALT="$\displaystyle = 1$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="img91.svg"
+ ALT="$\displaystyle \frac{dy}{dx} + \tan(x)y$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img92.svg"
+ ALT="$\displaystyle = \sec(x) \quad\textrm{Linear ODE}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.68ex; vertical-align: -0.57ex; " SRC="img88.svg"
+ ALT="$\displaystyle \mu$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.12ex; " SRC="img93.svg"
+ ALT="$\displaystyle = e^{\int \tan(x) dx}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.37ex; vertical-align: -2.12ex; " SRC="img94.svg"
+ ALT="$\displaystyle \int \tan(x) dx$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img95.svg"
+ ALT="$\displaystyle = \ln(sec(x))$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.68ex; vertical-align: -0.57ex; " SRC="img88.svg"
+ ALT="$\displaystyle \mu$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img96.svg"
+ ALT="$\displaystyle = \sec(x) \quad\textrm{Multiply ODE by $\mu$}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="img97.svg"
+ ALT="$\displaystyle \frac{dy}{dx}\sec(x) + \sec(x)\tan(x)y$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.81ex; vertical-align: -0.70ex; " SRC="img98.svg"
+ ALT="$\displaystyle = \sec^2(x)$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+Since <!-- MATH
+ $\frac{d}{dx}\sec(x) = \sec(x)\tan(x)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.07ex; vertical-align: -0.92ex; " SRC="img99.svg"
+ ALT="$\frac{d}{dx}\sec(x) = \sec(x)\tan(x)$"></SPAN> we should now be able to see how the LHS of our equation can be withdrawn 
+into its chain rule form.
+<P></P>
+<DIV CLASS="mathdisplay"><TABLE CLASS="equation" >
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="img100.svg"
+ ALT="$\displaystyle \frac{d}{dx}\sec(x)\cdot y$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="img101.svg"
+ ALT="$\displaystyle = \frac{dy}{dx}\sec(x) + \sec(x)\tan(x)y$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="img100.svg"
+ ALT="$\displaystyle \frac{d}{dx}\sec(x)\cdot y$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.81ex; vertical-align: -0.70ex; " SRC="img98.svg"
+ ALT="$\displaystyle = \sec^2(x)$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img102.svg"
+ ALT="$\displaystyle \sec(x) \cdot y$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.37ex; vertical-align: -2.12ex; " SRC="img103.svg"
+ ALT="$\displaystyle = \int \sec^2(x) = \tan(x) + c$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.68ex; vertical-align: -0.57ex; " SRC="img17.svg"
+ ALT="$\displaystyle y$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img104.svg"
+ ALT="$\displaystyle = \sin(x) + c\cdot \cos(x)$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node1.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A
+ HREF="node6.html">Exact ODEs</A>
+<B> Up:</B> <A
+ HREF="node1.html">First Order Differential Equations(ODEs)</A>
+<B> Previous:</B> <A
+ HREF="node4.html">Homoegeneous ODEs</A></DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

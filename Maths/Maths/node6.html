@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2019 (Released January 1, 2019) -->
+<HTML lang="EN">
+<HEAD>
+<TITLE>Exact ODEs</TITLE>
+<META NAME="description" CONTENT="Exact ODEs">
+<META NAME="keywords" CONTENT="Maths">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2019">
+
+<LINK REL="STYLESHEET" HREF="Maths.css">
+
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="next" HREF="node7.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node1.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A
+ HREF="node7.html">Second Order ODEs</A>
+<B> Up:</B> <A
+ HREF="node1.html">First Order Differential Equations(ODEs)</A>
+<B> Previous:</B> <A
+ HREF="node5.html">Linear ODEs</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00015000000000000000">
+Exact ODEs</A>
+</H2>
+When a variable in a multi variable function <SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img105.svg"
+ ALT="$f(x,y)$"></SPAN> has variables that rely on another e.g. 
+<!-- MATH
+ $y = y(t), x = x(t)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img106.svg"
+ ALT="$y = y(t), x = x(t)$"></SPAN> then the derivative of that function is known as the total derivative and
+ is given as <P><!-- MATH
+ \begin{displaymath}
+\frac{d}{dt}f(x,y) = \frac{\delta f}{\delta x} \frac{dx}{dt} + \frac{\delta f}{\delta y} \frac{dy}{dt}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.44ex; vertical-align: -2.16ex; " SRC="img107.svg"
+ ALT="$\displaystyle \frac{d}{dt}f(x,y) = \frac{\delta f}{\delta x} \frac{dx}{dt} + \frac{\delta f}{\delta y} \frac{dy}{dt}$">
+</DIV><P></P>
+This can also occur for when one variable is the function of another e.g. <!-- MATH
+ $x = x, y = y(x)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img108.svg"
+ ALT="$x = x, y = y(x)$"></SPAN>, the total derivative of such is 
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eqn:Total_Derivative"></A><!-- MATH
+ \begin{equation}
+\frac{d}{dx}f(x,y) = \frac{\delta f}{\delta x} + \frac{\delta f}{\delta x} \frac{dy}{dx}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="img109.svg"
+ ALT="$\displaystyle \frac{d}{dx}f(x,y) = \frac{\delta f}{\delta x} + \frac{\delta f}{\delta x} \frac{dy}{dx}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+Exact ODEs take the form <P><!-- MATH
+ \begin{displaymath}
+M(x,y) + N(x,y)\frac{dy}{dx}=0
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="img110.svg"
+ ALT="$\displaystyle M(x,y) + N(x,y)\frac{dy}{dx}=0$">
+</DIV><P></P>
+Where M and N must be separated by a plus. 
+As you can see, this is in the same form as a the derivative of the function from equation (1),
+ thus we can assume that <P><!-- MATH
+ \begin{displaymath}
+\frac{\delta f}{\delta x} = M \quad \frac{\delta f}{\delta x} = N
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="img111.svg"
+ ALT="$\displaystyle \frac{\delta f}{\delta x} = M \quad \frac{\delta f}{\delta x} = N$">
+</DIV><P></P>
+In order to verify this assumption we can test an 'exactness condition' 
+<P></P>
+<DIV CLASS="mathdisplay"><TABLE CLASS="equation" >
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.72ex; vertical-align: -2.16ex; " SRC="img112.svg"
+ ALT="$\displaystyle \frac{\delta^2f}{\delta x \delta y}$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.72ex; vertical-align: -2.16ex; " SRC="img113.svg"
+ ALT="$\displaystyle = \frac{\delta^2 f}{\delta y \delta x}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="img114.svg"
+ ALT="$\displaystyle \frac{\delta M}{\delta x}$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.44ex; vertical-align: -2.16ex; " SRC="img115.svg"
+ ALT="$\displaystyle = \frac{\delta N}{\delta y}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+We must now find a function to satisfy these conditions, however this is best left to an example.
+
+<P></P>
+<DIV CLASS="mathdisplay"><TABLE CLASS="equation" >
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="img116.svg"
+ ALT="$\displaystyle x + y^2 + 2xy\frac{dy}{dx}$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.72ex; vertical-align: -0.12ex; " SRC="img32.svg"
+ ALT="$\displaystyle = 0$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.68ex; vertical-align: -0.57ex; " SRC="img117.svg"
+ ALT="$\displaystyle M = x + y^2$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.26ex; vertical-align: -0.57ex; " SRC="img118.svg"
+ ALT="$\displaystyle \quad N = 2xy$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.44ex; vertical-align: -2.16ex; " SRC="img119.svg"
+ ALT="$\displaystyle \frac{\delta M}{\delta y}$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.57ex; " SRC="img120.svg"
+ ALT="$\displaystyle = 2y$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="img121.svg"
+ ALT="$\displaystyle \frac{\delta N}{\delta x}$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.57ex; " SRC="img120.svg"
+ ALT="$\displaystyle = 2y$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+This satisfies the 'exactness condition', and so we can begin to find the function that solves the ODE.
+<P></P>
+<DIV CLASS="mathdisplay"><TABLE CLASS="equation" >
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.81ex; vertical-align: -0.12ex; " SRC="img122.svg"
+ ALT="$\displaystyle M$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="img123.svg"
+ ALT="$\displaystyle = \frac{\delta f}{\delta x}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.37ex; vertical-align: -2.12ex; " SRC="img124.svg"
+ ALT="$\displaystyle \int M dx$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.88ex; vertical-align: -1.71ex; " SRC="img125.svg"
+ ALT="$\displaystyle = f = \frac{1}{2}x^2 + xy^2 + g(y)$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.81ex; vertical-align: -0.12ex; " SRC="img126.svg"
+ ALT="$\displaystyle N$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.44ex; vertical-align: -2.16ex; " SRC="img127.svg"
+ ALT="$\displaystyle = \frac{\delta f}{\delta y}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR >
+<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.37ex; vertical-align: -2.12ex; " SRC="img128.svg"
+ ALT="$\displaystyle \int N dy$"></SPAN></TD>
+<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.81ex; vertical-align: -0.70ex; " SRC="img129.svg"
+ ALT="$\displaystyle = f = xy^2 + h(x)$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+For <!-- MATH
+ $\int M dx = \int N dy$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.80ex; vertical-align: -0.83ex; " SRC="img130.svg"
+ ALT="$\int M dx = \int N dy$"></SPAN> to be true their constants must satisfy each other, thus <!-- MATH
+ $g(y) = 0, h(x) = \frac{1}{2}x^2$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.98ex; vertical-align: -0.92ex; " SRC="img131.svg"
+ ALT="$g(y) = 0, h(x) = \frac{1}{2}x^2$"></SPAN>
+<P><!-- MATH
+ \begin{displaymath}
+f(x,y) = \frac{1}{2}x^2 + xy^2 + c = 0
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 4.88ex; vertical-align: -1.71ex; " SRC="img132.svg"
+ ALT="$\displaystyle f(x,y) = \frac{1}{2}x^2 + xy^2 + c = 0$">
+</DIV><P></P>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node1.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A
+ HREF="node7.html">Second Order ODEs</A>
+<B> Up:</B> <A
+ HREF="node1.html">First Order Differential Equations(ODEs)</A>
+<B> Previous:</B> <A
+ HREF="node5.html">Linear ODEs</A></DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>
