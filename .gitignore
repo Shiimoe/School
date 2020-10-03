@@ -1,0 +1,8 @@
+# Windows specific files
+desktop.ini
+# LaTeX litter
+*.aux
+*.fdb_*
+*.fls 
+*.log
+*.synctex*
