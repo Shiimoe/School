@@ -5,9 +5,15 @@
 \usepackage{graphicx}
 \usepackage[bmargin=2cm, tmargin=2cm]{geometry}
 \usepackage{fourier-orns}
+\usepackage{chemfig}
+\usepackage{subfig}
 
+
+\renewcommand{\sup}[1]{\(^#1\)}
+\newcommand{\sub}[1]{\(_#1\)}
 \newcommand{\thedate}[1]{\hfill{\small\sc #1}}
 \newcommand{\NB}{{\large\lefthand}\quad}
+\renewcommand{\deg}{\text{\(^\circ\)}}
 \titleformat{\section}[hang]{\sc\Large}{\S\thesection}{3ex}{}[]
 \titleformat{\subsection}[runin]{\sc\large}{\S\thesubsection}{3ex}{}[]
 \titleformat{\subsubsection}[runin]{}{\S\thesubsubsection}{1ex}{\bfseries}[.]
@@ -156,7 +162,7 @@
 
         \item When considering a particular electron in an nd or nf orbital:
         
-        Each of the other electrins in the (nd, nf) group contributes 0.35\\
+        Each of the other electrons in the (nd, nf) group contributes 0.35\\
         Each of the electrons in a lower group than the one being considered contributes 1.00\\
     \end{enumerate}
     \NB Do \textbf{NOT} include the electron that you are considering when calculating \(s\), it cannot shield the
@@ -257,14 +263,296 @@
     electron correlation.
     \newpage
     \subsection{Inert Pair Effect}
+
+    We can see that when we change the electronegativity of the bonded atom (from Oxygen to Fluorine) it changes
+    the boundry of when we have a discrete covalent molecule and when we have a network structure, like in the
+    van Ketelaar triangle. We can see that with the more electronegative Fluoride it favours covalent bonds more.
+
     \begin{figure}[h]
         \centering
         \includegraphics[width=10cm]{of.jpg}
     \end{figure}
-    \NB Covalent network structures are like diamond.
+    \NB Covalent network structures are like diamonds.\\
 
-    We can see that when we change the electronegativity of the bonded atom (from Oxygen to Fluorine) it changes
-    the boundry of when we have a discrete covalent molecule and when we have a network structure.
+    These trends are governed by electronegativity differences, Indium has a much lower negativity than Xenon,
+    and so has less oxidation states. This is generally more trendy higher up on the periodic table, whereas 
+    elements in the lower periods may perfer lower oxidation states. 
 
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=10cm]{ox.jpg}
+    \end{figure}
+
+    The inert pair effet is the tendency of electrons in the outermost s orbital to remain unionised or unshared
+    in the compounds of group 13-16 elements. 
+
+    The most common oxidation state for group 13 is +3, however +1 is common for Tl (at the bottom of group 13).
+    The stabibility for group 13 is Al $<$ Ga $<$ In $<$ Ti going down the group. Why is this? No one knows.
+    We can guess and say that the relativistic effects are stabilising the 6s orbital of Tl. More importantly the strength
+    of the covalent bonds also decrease down a group due to poor orbital overlap. This resulsts in the bond
+    enthalpy not offsetting the rehybridisation energy cost. (i.e. it costs more energy to form an sp3 orbital
+    for Pb than would be in the Pb-C bond and so is not energetically favourable.)\\
+
+    Look at the figure below, as you can see with two small atoms the overlap of their s orbitals is very effective,
+    both have large amounts of electron density overlapped. However with the small-big case, the big one has a very
+    tiny amount of electron density in the small region, so the overlap is poor.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=4cm]{over.jpg}
+        \caption{overlap of atoms helps to determine bond strength}
+    \end{figure}
+
+    In Bi the 1s electron reaches 60\% c, thus m = 1.26 (relativistic effects), so the 1s orbital contracts
+    by 20\% thus lowering its energy. This is called direct relativistic orbital contraction.
+
+    The s orbitals penetrate most and so are more stabilised (less available for bonding). p orbitals contract
+    much less due to poorer penertration and so are more available for bonding. 
+
+    d and f orbitals experience indirect relativist orbital expansion (destabilised). Their poor penertration and
+    the contraction of the s and p electrons leaves them more shielded and less affectedby Z*.
+
+    \subsection{Multiple bonding}
+    Generally as we go down the groups the bonds become weaker, the orbitals are more diffuse and the bonds
+    are longer. 
+
+    In the first row the 2p\(_\pi\) orbitals are use in multiple bonding, they have a good overlap due to a short
+    bond length, despite having a smaller covalent overlap.
+    In the second row and beyond the larger covalent radius is cancelled out by the much larger bond length, so
+    there is no common multiple bonding.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=6cm]{ov.jpg}
+    \end{figure}
+
+    \begin{center}
+        \begin{tabular*}{4cm}{l l l}
+            C=O & C-O & \(\Delta\pi\)\\
+            715 & 335 & 380 kJ mol\(^{-1}\)\\
+            S=O & Si-O & \(\Delta\pi\)\\
+            590 & 420 & 170 kJ mol\(^{-1}\)
+        \end{tabular*}
+    \end{center}
+
+    So we can see that Si which is down a period from C has half of the stabilisation energy from a double bond.
+    Thus the single bonded Silicone Oxide is more stable, unlike Carbon, where the p\(_\pi\)-p\(_\pi\) overlap
+    stabilises the bond.
+
+    % \chemfig{C(-[0]O)(-[2]O)(-[4]O)(-[6]O)} 2x715 = 1430 \chemfig{C(=[0]O)(=[4]O)} 4x335=1340 \(\sigma + \pi\) is stable
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=10cm]{stab.jpg}
+    \end{figure}
+    \newpage
+    \subsubsection{p\(_\pi\)-d\(_\pi\) overlap}
+    A filled p-orbital can donate to a vacant d-orbital that is pointing in its directions. More dispersed 
+    so can reach over the longer bond, this is called d-p \(\pi\) back bonding or p\(_\pi\)-d\(_\pi\) bonding (very confusing, I know).
+    One example of this is the P=O beond, the O back bonds to the vacant d-orbital on the P atom, giving a 
+    double bond from the \(\pi\) bond formed.
+    % two images side by side
+    \begin{figure}[h]
+        \centering
+        \subfloat[\centering]{\includegraphics[width=8cm]{d-p.jpg}}
+        \qquad
+        \subfloat[\centering]{\includegraphics[width=6cm]{po.jpg}}
+    \end{figure}
+
+    \begin{tabular*}{100cm}{l l l l l l}
+        & CCl\(_4\) & SiCl\(_4\) & GeCl\(_4\) & SnCl\(_4\) & PbCl\(_4\) \\
+        \(\Delta H\deg_f\) kJmol\(^{-1}\) & -107 & -628 & -510 & -493 & -284\\
+        M-Cl kJmol\(^{-1}\) & 326 & 402 & 339 & 314 & ---\\
+    \end{tabular*}
+    \vspace{2cm}
+    \(\Delta H\deg_f\) of Si is greater than C because of the ionic contribution to the Si-Cl bond (Si is 
+    less electronegative). Then as the orbitals become bigger and overlap becomes 
+    poorer \(\Delta H\deg_f\) falls, as does the M-Cl bond energy.  
+
+    CCl\(_2\) and SiCl\(_2\) do not exist, because it is more energetically favourable to hybridise and form 
+    their trichlorides instead. But GeCl\(_2\) does exist, due to the 3d shielding effect on the 4s which allows
+    it to bond like that, GeCl\(_4\) also exists. PbCl\(_2\) is more stable than PbCl\(_4\) because of relativistic
+    effects and the inert pair effect.
+
+    \subsection{The Triels}\thedate{Week 3}
+    
+    \vspace{0.4cm}
+    Consisting of Group 13. They have the general config of ns\sup{2}np\sup{1}. So their chemistry is dominated
+    by electron deficiency, they have fewer valence electrons than the number of vaence orbitals (two completely empty p orbitals). 
+    They form Lewis acids.
+    
+    EX\sub{3} e.g. BF\sub{3} has 6 valence electrons, so it accepts an electron from a Lewis base. 
+    AlCl\sub{3} is useful for Fieldel Crafts reactions, it actually forms a dimer as the lone pair of electrons
+    on the Cl forms a dative bond with the other aluminium atom. However in reality the bonds are delocalised around
+    the ring. 
+    \begin{figure}[h]
+        \centering
+        \subfloat[\centering]{\includegraphics[width=6cm]{dat.jpg}}
+    \end{figure}
+    \begin{itemize}
+        \item EX has 4 valence electrons is most stable for Tl (but not when X = H). 
+        \item Boron clusters also form EX, (X = H, Cl)
+        \item For AlX and GaX they diproportionate: \ce{3MX -> 2M + MX\sub{3}}
+        \item The +1 oxidation state becoems more stable as the group descends.
+    \end{itemize}
+    This descending trend is because of the inert pair effect, the tendency of electrons in the outmermost s orbital to 
+    remain unionised or unshared in compounds of group 13-16.
+
+    \subsubsection{Boron Chemistry}
+    BX\sub{3} exists for all Halogens. BF\sub{3} can participate in $\pi$ bonding.
+    The B-F bond is very short so there is some overlap between the vacant p-orbital in Boron and the spare electron
+    pair in Fluoride, so there is some $\pi$ bonding characterists in BF\sub{3}. Although the bond is not strong
+    because of the large electronegativity difference, it still has influence on the properties of BF\sub{3}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=2cm]{bf3.png}
+    \end{figure}
+
+    Lewis acid strength: BI\sub{3} $>$ BBr\sub{3} $>$ BCl\sub{3} $>$ BF\sub{3}.
+    This is due to longer bonds, and so the overlap between the p-orbitals is lesser. Thus the vacant Boron 
+    p-orbital can better accept a lone pair of electrons. 
+
+    We know that the non-Fluoride halides for the other triels dimerise e.g. AlCl\sub{3} to Al\sub{2}Cl\sub{6}.
+    This is due to a poor overlap of Cl and Al due to the large orbitals, so dimerisation is preferable to $\pi$ bonding.
+
+    BX\sub{3} undergo exchange reactions. 
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=10cm]{ex.jpg}
+    \end{figure}
+
+    This does not happen to BF\sub{3} because the B-F bonds are too strong, instead it acts as a catalyst.
+    Low acidity but high stability. 
+
+    If we compare the stability of the acid-base(\textbf{L}) complex for  of Al, Ga, In we see:
+    
+    MF\sub{3}\textbf{L} $>$ MCl\sub{3}\textbf{L} $>$ MBr\sub{3}\textbf{L} $>$ MI\sub{3}\textbf{L}. This is the opposite
+    for B. This is becaue of the longer bonds and so no $\pi$ back bonding. MF\sub{3} is a stronger lewis acid as 
+    fluride is very electrowidthdrawing and so that makes the vacant p-orbital on the triel more electronegative
+    making it easier to accept a pair of electrions.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=10cm]{b2h6.jpg}
+    \end{figure}
+
+    Boron Hydries (Boranes), BH\sub{3} cannot $\pi$ bond with H as it has no lone pairs, so it forms an electron
+    deficient dimer. Valence bond theory cannot account for this structure as there are not enough valence electrons.
+
+    The B sp\sup{3} hybridises but with an empty electron instead. There is then overlap between the empty sp\sup{3} B 
+    orbital, a filled sp\sup{3} orbital and the 1s electron, this forms a banana bond
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=6cm]{ban.png}
+    \end{figure}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=6cm]{bmo.jpg}
+    \end{figure}
+
+    The different colours represent the different \emph{phases} of the electrons. They all need to be of the same phase
+    to form a bond together. They need to have the same \emph{symmetry}. You need to go over MO again, idiot.
+
+    Hydries become less stables as the group descends, Gallane was only discovered in 1989.
+    In\sub{3} and Tl\sub{3} are too unstable to exist unless they are coordinated with a Lewis base. 
+
+    Aluminum compounds are more stable when substituted with alkyls e.g. AlR\sub{2}H, they form stable dimers.
+
+    Aluminum hyrides and borohydrides are very good at reducing. 
+
+    \newpage
+
+    \subsection{Wade's Rules}\thedate{Week 3}
+
+    Rules to predict the structure of Boron hydrides (B\sub{n}H\sub{m} or anions of that B\sub{n}H\sub{m} \sup{x}\sup{-})
+    by counting the number of electron pairs for cluster bonding.
+
+    \begin{enumerate}
+        \item Each B-H unit donates two electrons (one pair) to cluster bonding.
+        \item Any additional hydrogen atoms i.e. not bonded to Boron, donates one electron to cluster bonding.
+        \item Add the overall charge of the molecule e.g. 2 extra electrons for a 2\sup{-} charge
+        \item Add up the total number of electrons, should be even, so there are 2n in total, meaning n pairs of electrons involved in cluster bonding.
+        \item If we have n pairs then the structure is based around a polyhedron with n-1 vertices. e.g. 7 pairs means a 6 vertexed polyhedron which is an octahedron.
+        \item Count the number of B-H units.
+        \begin{itemize}
+            \item If B-H = number of vertices (n-1) then place one B-H unit at each vertex, this structure is described as \textbf{CLOSO}, CLOSED, there is no open face.
+            \item If B-H is one fewer than the number of vertices, B-H - 1 = n-1, then places B-H units at all but one of the vertices, this structure is described as \textbf{NIDO}, NEST.
+            \item If the number of B-H units is two fewer than the number of vertices, B-H - 2 = n-1, then fill all but two of the vertices (these two vertices must be adjacent), the structue is described as \textbf{ARACHNO}, COBWEB.
+        \end{itemize}
+        \item Place any remaning hydrogens as bridging Hs around the open face. If there are any left then place them on the electron deficient boron atoms around the open face, they are the ones that have 'lost' the most bonds from the original \textbf{CLOSO} structure.
+    \end{enumerate}
+    
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=10cm]{closo.jpg}
+    \end{figure}
+
+    Learn from an example. B\sub{6}H\sub{6}\sup{2}\sup{-}
+    
+    \begin{itemize}
+        \item B\sub{6}H\sub{6}\sup{2}\sup{-} = (BH)\sub{6}\sup{2}\sup{-} = six B-H units, six pairs of electrons
+        \item Number of electrons available for cluster bonding = 14 = 6*2 (from B-H units) + 2 (from the 2 minus charge)
+        \item 14 electrons in total so n = 7 pairs.
+        \item n-1 = 6, meaning 6 vertices which gives us an octahedron.
+        \item Count the number of B-H units, six, this is the same as n-1, which means we have a \textbf{CLOSO} structure, and one B-H fragment at each vertex.
+        \item We have no extra hydrogens so the structure is complete.
+    \end{itemize}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=6cm]{boro.jpg}
+    \end{figure}
+
+    \newpage
+
+    A second example. B\sub{4}H\sub{1}\sub{0}
+    
+    \begin{itemize}
+        \item B\sub{4}H\sub{1}\sub{0} = (BH)\sub{4}H\sub{6} = four B-H units and six hydrogens.
+        \item Number of electrons available for cluster bonding = 14 = 4*2 + 6.
+        \item 14 electrons in total so n = 7
+        \item n-1 = 6, 6 vertices so we have an octahedron
+        \item 4 B-H units, two less than the number of vertices (n-1), so we have an \textbf{ARACHNO} structure. Do not fill two adjacent vertices with B-H fragments.
+        \item We have 6 extra electrons, four of these will be bridging hydrogens around the open face, in the positions of symmetry for that structure, bridge each boron with a hydrogen. 
+        \item The two that are left will go to the most electron deficient boron atoms, which at the ends of the structure, they have 'lost' two bonds (from the \textbf{CLOSO} structure), and so hydrogens are placed there.
+    \end{itemize}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=10cm]{term.png}
+    \end{figure}
+
+    \newpage
+
+    \subsubsection{Carboranes}
+    Wade's rules also apply to carboranes, molecules where one or more of the Boron atoms have been replaces with a Carbon atom.
+    The B-H and C-H\sup{+} fragments are said to be isolobal, meaning:
+    \begin{itemize}
+        \item They have the same number of electrons - isoelectronic.
+        \item Their frontier orbitals (the HOMO and LUMO orbitals) have the same symmetries
+        \item Their frontier orbitals are of similar energy
+        \item Their frontier orbitals are of the same shape 
+    \end{itemize}
+
+    This means that the B-H and C-H units are interchangable in clusters and so we can use Wade's rules for them too. 
+
+    Example C\sub{2}B\sub{3}H\sub{5}
+
+    \begin{itemize}
+        \item C\sub{2}B\sub{3}H\sub{5} = (CH)\sub{2}(BH)\sub{3} = (CH\sup{+})\sub{2}(BH)\sub{3} \sup{2}\sup{-} Since the C-H\sup{+} is positive we need a 2\sup{-} charge to be ditributed across the rest of the B-H units.
+        \item Number of electrons, 6 (BH) + 4 (CH) + 2(BH negative charge) = 12 = 6 pairs, so n = 6
+        \item n-1 = 5, 5 vertices so we have a trigonal bipyramid.
+        \item CH + BH = 5 = n-1 so we have \textbf{CLOSO}
+        \item However we have 3 different ways of arranging our CH units.
+        \item The most stable form is having the two CH units be as far apart as possible, since they have CH\sup{+} units they will repell, so distance is stabibility.
+        \item This means the most stable is the 1,5- structure 
+    \end{itemize}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=10cm]{1-5.jpg}
+    \end{figure}
     
 \end{document}

@@ -110,10 +110,45 @@
     
     \begin{align*}
         F(\omega) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{+\infty} f(t) e^{-i\omega t} dt\\
-        F(k) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{+\infty} f(t) e^{-ikt} dt
+        F(k) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{+\infty} f(x) e^{-ikx} dx
     \end{align*}
 
     As \(T \to \infty\) the frequency separation d\(\omega\) becomes infitesimally small, so the Fourier
-    transformation is the \emph{integral above}.
+    transformation is the \emph{integral} above, the spectrum becomes continuous. This transformations "translates" a function to its representation
+    in terms of frequency. 
+
+    \subsection{The Uncertainty Principle}
+    The uncertainty principle arises not from a disturbance during measurment but because of the fundamental
+    physics of waves. It happens at any scale, not just quantum. If we narrow a function of time its frequency
+    must increase. 
+
+    We can see this in a top-hat function, that is 0 everywhere except for a certain range of values \(2a\) wide
+    where it is 1. It is thus an aperiodic function of a certain width, a pulse in time or a narrow region of space.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=8cm]{2.jpg}
+        \caption{Top hat function of width 2a}
+    \end{figure}
+
+    This top hat function Fourier transforms into a sinc (\(\frac{\sin x}{x}\)) function.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=8cm]{3.jpg}
+        \caption{Sinc function}
+    \end{figure}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=8cm]{4.jpg}
+        \caption{Sinc function}
+    \end{figure}
+
+    The relationship between position (real) space and momentum (reciprocal) space is shown well when examining
+    the effect of narrowing the width of the top hat function on its Fourier transform. As the width increases
+    the Fourier transform gets narrower.
+
+    
 
 \end{document}

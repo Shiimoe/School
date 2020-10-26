@@ -5,13 +5,19 @@
 \usepackage{graphicx}
 \usepackage[bmargin=2cm, tmargin=2cm]{geometry}
 \usepackage{fourier-orns}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{modiagram}
+
 
 \newcommand{\thedate}[1]{\hfill{\small\sc #1}}
 \newcommand{\NB}{{\large\lefthand}\quad}
 \newcommand{\cm}{cm\(^{-1}\) }
-\titleformat{\section}[hang]{\sc\Large}{\S\thesection}{3ex}{}[]
-\titleformat{\subsection}[runin]{\sc\large}{\S\thesubsection}{3ex}{}[]
-\titleformat{\subsubsection}[runin]{}{\S\thesubsubsection}{1ex}{\bfseries}[.]
+\titleformat{\section}[runin]{\sc\Large}{\S\thesection}{3ex}{}[]
+\titleformat{\subsection}[hang]{\sc\large}{\S\thesubsection}{3ex}{}[]
+\titleformat{\subsubsection}[hang]{}{\S\thesubsubsection}{1ex}{\bfseries}[]
 
 \newtheorem{defn}{Definition}[section]
 
@@ -87,4 +93,343 @@
     energy levels. Since $k_BT$ = 207\cm and rotational levels are separated by only 10\cm this should be obvious.
     It is also clear that there is nowhere near enough energy at normal temperatures for there to much vibrational
     tranistion, and not enough energy for there to be any electronic tranistions at all.
+
+    \section{Atomic wavefunctions et al.}\thedate{Week 2}
+
+    For a one electron atom or ion, X, the energy only depends on the principal quantum number. $$E = -\frac{Z^2R_x}{n^2}$$ Z = nuclear charge, $R_x$ is the Rydberg constant for that atom or ion.
+
+    Example: calculate the energy of an electron in the 2s orbital of Hydrogen, where $R_H$ = 109678.7717 cm$^{-1}$
+    This will give the answer in cm$^{-1}$ since $R_H$ is in \cm, that is really the wavenumber instead of the energy.
+    $\tilde{v}$ \cm = $-\frac{Z^2\tilde{R_X}(cm^{-1})}{n^2}$, however in spectroscopy we can say that the energy is in \cm
+    We can also multiply $R_H$ by \textbf{hc} to convert it to J.
+    
+    So carrying on with the example $E$ (\cm) = $-\frac{1^2 \cdot 109678.7717}{2^2}$ = - 27,419.69\cm
+
+    \subsection{Rydberg constant}
+    \begin{align*}
+        R_X (cm^{-1}) &= \frac{\mu e^4}{8h^3\tilde{c}\epsilon{_0}^2} \qquad \text{$\tilde{c}$ is c in \cm} \\
+        \mu &= \frac{m_em_N}{m_e + m_N}
+    \end{align*}
+
+    Where $\mu$ is the reduced mass, $m_e$ is the mass of an electron and $m_N$ is the mass of the nucleus.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=4cm]{delte.jpg}
+    \end{figure}
+
+    The change in energy of an electron when changing level is 
+    $$\Delta E = Z^2R_X\left(\frac{1}{n{_1} ^2}-\frac{1}{n{_2}^2}\right)$$
+    When changing energy we can change $n$ however we like, however $l$ is restriced to only $\pm l$.
+    So we can go from 1s to 3p, however not to 2s or 3d etc.
+
+    How do we calculate the ionisation energy (IE) of a Hydrogen atom (Z = 1)? An atom is ionised when n $\rightarrow \infty$, so
+    $$IE = \Delta E = 1^2R_H\left(\frac{1}{1^2}-\frac{1}{\infty^2}\right) = R_H$$
+
+    \subsection{Angular Momenta}
+
+    For a spectra of atoms/ions with more than one electron each electron will have its own set of 
+    $n, l, m_l, s \text{ and } m_s$. The angular momenta ($l$) of different electrons can couple together in different ways
+    which will have different energies. Since they determine the energy levels they determine spectroscopy i.e. lines we see on a spectrum.
+    Considering different spins and angular momenta is called Russel-Saunders coupling.
+
+    \subsubsection{Coupling Spin}
+    Consider two electrons, 1 and 2, each has $s_1 = s_2 = \frac{1}{2}$ and $m_s = +\frac{1}{2}$ or $-\frac{1}{2}$
+    If $S$ is the overall spin of the two electron system then the allowed values from from the Clebsch-Gordan series:
+    \begin{center}
+        \begin{math}
+            S = s_1 + s_2 ,\ (s_1 + s_2)-1 \ ... \ |s_1 - s_2|
+        \end{math}
+    \end{center}
+    So the allowed  values of $S$ are $\frac{1}{2} + \frac{1}{2} = 1$ and $\frac{1}{2} - \frac{1}{2} = 0$
+
+    \subsubsection{Coupling Orbital Angular Momenta}
+    Again, consider two electrons, they will have orbital angular momenta of $l_1$ and $l_2$. The value
+    of these could be any real positive integer, $0, 1, 2...$ If $L$ is the total orbital angular momenta 
+    of the combined system then the allowed values again come from the Clebsch-Gordan series:
+    $$L = l_1 + l_2,\ (l_1 + l_2) - 1,\ (l_1 + l_2) - 2,/ ...\ |l_1 - l_2|$$
+    So if $l_1 = 2$ and $l_2 = 3$ then we have a highest value of $2+3=5$ and a lowest value of $|2-3| = 1$.
+    So L has a range of values of $L = 5, 4, 3, 2, 1$
+
+    \subsubsection{Coupling Spin and Orbital Angular Momenta}
+    We have $S$ and $L$ for a two-electron atom, we can combine these to get the allowed values of the 
+    spin-orbit angular momentum, $J$. Unsurprisingly we use a Clebsch-Gordan series:
+    $$J = L + S,\ L+S-1,\ ...\ |L-S|$$
+    So if both $L$ and $S$ are 1, then the allowed values of $J$ are 2, 1 and 0
+
+    \subsubsection{Many electron atom}
+    For any electron in a many-electron atom it will have its own values of $l,\ m_l,\ s,\ m_s,\ j$.
+    However the system as a whole (the entire atom) will have its own values of $L,\ M_L,\ S,\ M_S,\ J$.
+    \begin{align*}
+        M_L &= L,\ L-1,\ ...\ -L\\
+        M_S &= S,\ S_1,\ ...\ -S \\
+        M_L &= \sum m_l \\
+        M_S &= \sum m_s 
+    \end{align*}
+
+    \subsection{Atomic term symbols and transitions}
+    {\huge $$^{2S+1}L_J \quad \text{e.g.} \quad ^{2}P_{\frac{3}{2}}$$}
+
+    \begin{itemize}
+        \item $2S+1$ is the "spin multiplicity, S is the total spin quantum number for the atom
+        \item $L$ is the total orbital angular momentum quantum number for the atom
+    \end{itemize}
+    In the same vein of s, p, d and f orbitals the same applies to $L$
+    \begin{align*}
+        S: L &= 0 \\
+        P: L &= 1 \\
+        D: L &= 2 \\
+        F: L &= 3
+    \end{align*}
+    \begin{itemize}
+        \item $J$ is the total angular momentum quantum number for the atom, i.e. how L and S are coupled
+    \end{itemize}
+    % \begin{center}
+    % \begin{modiagram}[style=square, AO-width=20pt]
+    %     \AO{s}[label={$m_l = 1$}]{0;up}
+    %     \AO(40pt){s}[label={$m_l = 0$}]{0;up}
+    %     \AO(80pt){s}[label={$m_l = -1$}]{0;up}
+    %   \end{modiagram}
+    % \end{center}
+
+    A p-orbital has $l=1$, thus $m_l = +1, 0, -1$, instead of using $p_x, p_y, p_z$ we will use the $m_l$ numbers instead.
+
+    \begin{center}
+        \begin{modiagram}[style=square, AO-width=20pt]
+            \AO{p} [label[x]={$m_l=+1$}, label[y]={$m_l=0$}, label[z]={$m_l=-1$}] {0;up,up,up}
+        \end{modiagram}
+    \end{center}
+    
+    Electron spin is represented with up\ ($m_s = +\frac{1}{2}$) and down\ ($m_s = -\frac{1}{2}$) arrows
+    \begin{modiagram}[style=square]
+        \AO{s}{0;pair}
+    \end{modiagram}
+
+    \subsubsection{Closed-shell atoms}
+    A closed (sub)shell atom is any atom for which all of the electrons are paired. 
+
+    \begin{center}
+        \begin{modiagram}[style=square, AO-width=15pt]
+            \AO{s}[label={$m_l = 0$}]{0;pair}
+        \end{modiagram}
+        \begin{align*}
+            M_s = \sum m_s = S, S-1, ... -S
+        \end{align*}
+    \end{center}
+    
+    Well we know for He that we have two electrons, where $m_s = \pm \frac{1}{2}$ so $M_S$ = 0. This is the 
+    only value we could have for He so $S = 0$ as well. This is true for every closed shell atom (like the Noble gasses).
+    \begin{center}
+        \begin{align*}
+            M_L = \sum m_l = L, L-1, ... -L
+        \end{align*}
+    \end{center}
+    For an s orbital $l = 0$ and so $m_l = 0$ as well, thus $M_L = 0$, this also means that $L=0$ for helium, 
+    and as such $J=0$ too, we know this from the equations above. This is true for all closed shell atoms.
+    So our term symbol for He is thus $^1S_0$, this is read as ``singlet S 0'', this is the same for all closed shell atoms,
+    e.g. Ne, Li$^+$, Mg$^{2+}$, we call these singlet states.
+
+    \subsubsection{Alkali Metal Atoms}
+    We know they have a single unpaied electron in an s orbital     
+    \begin{modiagram}[style=square]
+        \AO{s}{0;up}
+    \end{modiagram}
+
+    So for Potassium, which has an electronic config of $\ce{[Ar] 4s^1}$, up until the 4s$^1$ shell it is a
+    closed shell atom, and so overall it will have values $S = 0$ and $L = 0$. So we can consider it as a
+    single unpaired electron, $m_s=\frac{1}{2}$ and so $s=\frac{1}{2}$ thus $S = \frac{1}{2}$. 
+    The electron is in an s orbital, so $l = 0,\ m_l = 0$ hence $L = 0$.
+    $$J = L+S,\ L+S-1\ ...\ |L-S| = 0 + \frac{1}{2}, |0-\frac{1}{2}| = \frac{1}{2}$$
+    $$^2S_{\frac{1}{2}}$$
+    This term symbol is the same for all Alkali metal atoms, since the only difference between them is the size
+    of the closed shell, which always gives 0. The same applies to other elements with a closed shell before a ns$^{1}$
+    electronic config, like Copper. $\ce{[Ar] 3d^10 4s^1}$
+    \newline
+
+    What happens if we excite an alkali metal atom so that the outermost s orbital electron is moved up into a p orbital?
+    For potassium that would give a configuration of $\ce{[Ar] 4p^1}$ 
+    \begin{center}
+        \begin{modiagram}[style=square, AO-width=20pt]
+            \AO{p} [label[x]={$m_l=+1$}, label[y]={$m_l=0$}, label[z]={$m_l=-1$}] {0;up,0,0}
+        \end{modiagram}
+    \end{center}
+    We can forget about [Ar] since they only give 0, and so $s =\frac{1}{2},\ m_s=\frac{1}{2},\ S=\frac{1}{2}$.
+    But now the electron is in a p orbital so $l=1,\ L=1$. 
+    $$J = L+S,\ L+S-1\ ...\ |L-S| = \frac{3}{2},\ \frac{1}{2}$$
+    So now we have two term symbols, these are two different electronic states that will have different energies.
+    This will give us two different states in spectroscopy. Since $2S+1 = 2$ we call these states ``doublet'' states.
+    {\large $$^2P_\frac{3}{2} \quad \text{and} \quad ^2P_\frac{1}{2}$$}
+
+    \subsubsection{What do we see in the spectrum?}
+    We have selection rules, $\Delta J = 0, \pm 1$, we can leave J unchanged (but not going from 0 to 0), but we have to change our orbital, i.e. l has to change, 
+    this is due to photons having an angular momentum. $\Delta S = 0$, since photons have no spin.
+    \newline
+
+    So when we promote, say, a Sodium atom, from 3s to 3p the term symbol goes from $^2S_\frac{1}{2}$ to either
+    $^2P_\frac{3}{2}$ or $^2P_\frac{1}{2}$, these two final states are slightly different in energy. 
+    We can confirm our that changes are valid, $S = \frac{1}{2}$ does not change on the transition to/from
+    the s/p orbital. However $J$ does change, but only for $\Delta J = 0, 1$, so it is valid. 
+
+    The intensity of the transition is determined by the relative degeneracy of the upper levels, which is 
+    $2J+1$. So we have a ratio of 2:1 for our transitions of Sodium. The 3 infront of the term symbols is 
+    the energy level i.e. 3 
+    \begin{align*}
+        3^2P_\frac{3}{2} \rightarrow 3^2P_\frac{1}{2} \quad 2\cdot \frac{3}{2} &= 4\\
+        3^2P_\frac{1}{2} \rightarrow 3^2P_\frac{1}{2} \quad 2\cdot \frac{1}{2} &= 2
+    \end{align*}
+
+    What happens if we transition Sodium to a 4d$^1$ orbital? This will give an electronic config of $\ce{[Ne] 4d^1}$
+    \begin{align*}
+        s &= \frac{1}{2},\ S=\frac{1}{2}\\
+        l &= 2,\ L = 2\\
+        J &= L + S,\ ... \ |L-S| = \frac{5}{2},\ \frac{3}{2}
+    \end{align*}
+
+    We cannot have a transition from $^2D_\frac{5}{2}$ to $^2P_\frac{1}{2}$ as $\Delta J = 2$ which breaks our selection rules.
+    $^2D_\frac{5}{2}$ and $^2D_\frac{3}{2}$ are very close in energy and so if the resolution of our equipment 
+    isn't low enough we may see only 2 peaks for the transitions from d to p, this is always something to consider.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=6cm]{4d.png}
+    \end{figure}
+
+    \subsection{More Atomic Term Symbols}
+
+    Consider a Carbon atom in its ground state $\ce{[Be] 2p^2}$, so we have $s_1 = s_2 = \frac{1}{2}$ thus $S = 0, 1$
+    \begin{center}
+        \begin{align*}
+            s_1 = s_2 = \frac{1}{2} \quad \text{thus}  \quad S &= 0, 1\\
+            l_1 = l_2 = 1 \quad \text{thus}  \quad l &= 0, 1, 2\\
+            ^1S,\ ^3S,\ ^1P,\ ^3P,\ ^1D,\ &^3D\ \text{Different ``states''}
+        \end{align*}
+    \end{center}
+    Lets look closer at the $^3D$ term, $L=2$ and so it must have an $M_L = 2$ component, so we must have an $m_l = 1$ 
+    for each electron as $\sum m_l = M_L$, and we have two electrons. For the triplet D state ($^3D$) it must have 
+    $S = 1$ as $3 = 2S + 1$, so it must have an $M_S = 1$ component which means that $m_s = \frac{1}{2}$ for each electron.
+
+    \begin{center}
+        \begin{modiagram}[AO-width=20pt]
+            \AO{p} [label[x]={$m_l=+1$}, label[y]={$m_l=0$}, label[z]={$m_l=-1$}] {0;up,0,0}
+            \AO(5pt){s}{0; up}
+        \end{modiagram}
+    \end{center}
+
+    This would mean that there would be two up ($m_s = \frac{1}{2}$) spin electrons with the same $m_l$, 
+    they have the same quantum numbers,this violates the pauli exclusion principle.
+
+    \subsubsection{Hund's Rules}
+    Within Russell-Saunders coupling, for a given configuration, in its \textbf{ground state}:
+    \begin{enumerate}
+        \item The term with the largest S is lowest in energy
+        \item For a given S the term with the largest L is lowest in energy
+        \item For a term with several levels:
+        \begin{itemize}
+            \item if the sub-shell is less than half full  then the lowest $J$ level is the lowest in energy
+            \item if the sub-shell is more than \textbf{or} half full then the highest $J$ level is lowest in energy
+        \end{itemize}
+    \end{enumerate}
+
+    To find the ground state of a Carbon atom we work through these rules. 
+    \begin{enumerate}
+        \item Largest $S$ (and so largest $M_S$), so parallel spins ($m_s$ are the same)
+        \begin{itemize}
+            \item $S = \frac{1}{2} + \frac{1}{2},\ \frac{1}{2}-\frac{1}{2},\ =\ 1,\ 0$
+            \item $M_S = \frac{1}{2} + \frac{1}{2} = 1$
+        \end{itemize}
+        \item For a given $S$, largest $L$ (and so largest $M_L$), so the two highest $m_l$ are needed
+        \begin{itemize}
+            \item $m_l = 1,\ 0$
+            \item $M_L = 1 + 0 = 1 = L$
+        \end{itemize}
+        \item $J = L+S,\ L+S-1,\ ...\ |L-S| = 2, 1, 0$
+        \begin{itemize}
+            \item Since our orbital is less than half filled then J must take the lowest value, so $J=0$
+        \end{itemize}
+    \end{enumerate}
+
+    \begin{center}
+        \begin{modiagram}[style=square, AO-width=20pt]
+            \AO{p} [label[x]={$m_l=+1$}, label[y]={$m_l=0$}, label[z]={$m_l=-1$}] {0;up,up,0}
+        \end{modiagram}
+    \end{center}
+
+    Putting this all together gets the ground state of Carbon to be $^3P_0$
+    \newline
+
+    This is similar to Carbon. We have two extra electrons, obeying Hund's rules we add it to $m_l = -1$
+    with the same spin as the other two, and then with the one left over it has to have the opposite spin but
+    go with the highest $m_l$. Our orbital is now more than half full and so we must go with the highest $J$ value.
+    $^3P_2$
+    \begin{center}
+        \begin{modiagram}[style=square, AO-width=20pt]
+            \AO{p} [label[x]={$m_l=+1$}, label[y]={$m_l=0$}, label[z]={$m_l=-1$}] {0;pair,up,up}
+        \end{modiagram}
+    \end{center}
+
+    Now let us consider a Nitrogen atom, $\ce{[Be] 2p^3}$. Obeying the first rule we know they should all have 
+    parallel spins so $m_s = +\frac{1}{2}$ for each electron. Obviously they all need different $m_l$ values.
+    $M_S = 3\frac{1}{2} = \frac{3}{2}$ and $M_L = 1 + 0 - 1 = 0$. So we take the highest $S$ value, $\frac{3}{2}$
+    and the highest $L$ value, $0$, which means that $J = \frac{3}{2} + 0$, we take the highet $J$ value since
+    our shell is only half full. $^4S_\frac{3}{2}$
+    \begin{center}
+        \begin{modiagram}[style=square, AO-width=20pt]
+            \AO{p} [label[x]={$m_l=+1$}, label[y]={$m_l=0$}, label[z]={$m_l=-1$}] {0;up,up,up}
+        \end{modiagram}
+    \end{center}
+    \newpage
+
+    Consider a Fluorine atom now, this is symmetrically similar to Boron.
+    \begin{center}
+        \begin{modiagram}[style=square, AO-width=20pt]
+            \AO{p} [label[x]={$m_l=+1$}, label[y]={$m_l=0$}, label[z]={$m_l=-1$}] {1.5;pair,pair,up}
+            \AO{p} [label[x]={$m_l=+1$}, label[y]={$m_l=0$}, label[z]={$m_l=-1$}] {0;up,0,0}
+        \end{modiagram}
+    \end{center}
+    For Fluorine we have 
+    \begin{itemize}
+        \item $M_S = 3\frac{1}{2} - 2\frac{1}{2} = \frac{1}{2} = S$
+        \item $M_L = 1 + 0 - 1 + 1 + 0 = 1 = L$
+        \item $J = \frac{3}{2},\ \frac{1}{2}$
+    \end{itemize}
+    Since this has one unpaired electron we will get the same term ($^2P$) as a single unpaired electron.
+    And now we just need to consider if the subshell is half full or half empty for our J value.
+    \begin{itemize}
+        \item $M_S = \frac{1}{2} = S$
+        \item $M_L = 1 = L$
+        \item $J = \frac{3}{2},\ \frac{1}{2}$
+    \end{itemize} 
+    For Boron $^2P_\frac{1}{2}$ and for Fluorine $^2P_\frac{3}{2}$, this is a very useful symmetry, that would
+    also apply for two unpaired electrons.
+
+    \subsubsection{Examples}
+    Term symbols for Arsenic, Phosphorus and Selenium$^+$. Notice how they all have the same electronic configuration
+    after the closed shells, p$^3$. This means they're isoelectric and so will have the same term symbol.
+    \begin{itemize}
+        \item $M_S = 3\frac{1}{2} = \frac{3}{2} = S$
+        \item $M_L = 1 + 0 - 1 = 0 = L$
+        \item $J = \frac{3}{2}$
+        \item $^4P\frac{3}{2}$
+    \end{itemize}
+
+    Another example for Cl, Cl$^{-}$, Cl$^+$. They are no isoelectric and so will have different term symbols,
+    not to worry. For Cl 3p$^{5}$, we can treat it like a single electron atom.
+    \begin{itemize}
+        \item $M_S = \frac{1}{2}$
+        \item $M_L = 1$
+        \item $J = \frac{3}{2},\ \frac{1}{2}$
+        \item Since the subshell is more than half full we use the highest $J$ value
+        \item $^2P_\frac{3}{2}$
+    \end{itemize}
+    Cl$^{-}$ has one more electron, thus making it a closed shell ion, so it will be $^1S_0$. 
+    Cl$^{+}$ has a config of 3p$^4$, we can treat this as a two unpaired electron atom.
+    \begin{itemize}
+        \item $M_S = 1$
+        \item $M_L = 1$
+        \item $J = 2,\ 1,\ 0$
+        \item Since the subshell is more than half full we use the highet $J$ value
+        \item $^3P_2$
+    \end{itemize}
+
+
 \end{document}
