@@ -567,16 +567,213 @@
     \end{itemize}
     
     \section{Harmonic and anharmonic vibrations}\thedate{Week 4}
+
+    Some confusing preliminary knowledge:
+    \begin{itemize}
+        \item $\omega_e$ \cm is the vibrational wavenumber (the vibratioanl frequency in \cm), we saw in the previous section
+        \item $\omega$ is the angular frequency
+        \item $\nu$ (NOT v) or $\nu_\text{vib}$ is the vibrational frequency
+        \item $\omega = 2\pi \nu$
+        \item $\hbar \omega = h \nu$
+        \item $\omega_e$ has units \cm whilst $h\nu$ has units J, we can sub one in for the other, to change 
+        the units, so if the energy is given in \cm we use $\omega_e$
+        \item To get $\omega_e$ in J we do $h\tilde{c}\omega_e = h\nu$, since they are both in Joules, so $\omega_e = \frac{\nu}{\tilde{c}}$
+    \end{itemize}
+
+
     We can assume that molecules obey Hooke's Law, $F= - k_Fx$, $V = -\int F \text{d}x$, so that \emph{classical} harmonic frequency of 
     oscillation is $\nu_\text{vib} = \frac{1}{2\pi}\sqrt{\frac{k_F}{\mu}}$, where $\nu_\text{vib}$ is the 
     vibrational frequency. 
     If we solve the Schr{\"o}dinger equation for harmonic motion, we can find the vibrational wavenumber, 
     $\omega_e \mcm$ and vibrational frequency $h\nu_\text{vib}$ J
-    $$\omega_e = \frac{\nu_\text{vib}}{\tilde{c}} = \frac{1}{2\pi\tilde{c}}\sqrt{\frac{k_F}{\mu}}$$
+    $$\omega_e = \frac{\nu_\text{vib}}{\tilde{c}} = \frac{1}{2\pi\tilde{c}}\sqrt{\frac{k_F}{\mu}} \mcm$$
     So the energy levels that arise (similar to $F(J)$), where $v$ (NOT $\nu$) is the vibrational quantum number, $v = 0, 1, 2...$
     $$G(v) = \left(v + \frac{1}{2}\right)\omega_e$$
     Remember how for $F(J)$ when $J = 0$ then $F(0) = 0$, however for vibrational motion this is not the case.
     $G(0) = \frac{1}{2}\omega_e \neq 0$. So the energy levels start at $\frac{1}{2}\omega_e$ and are spaced evenly
-    from there e.g. $G(1) = \frac{3}{2}\omega_e$, the gap between each is $\hbar\omega$ (I don't know why)
+    from there e.g. $G(1) = \frac{3}{2}\omega_e$, the gap between each is $\hbar\omega$ or $h\nu$ is measured in Joules.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=6.5cm]{vib.png}
+        \caption{Haromic oscillator wavefunctions}
+    \end{figure}
+
+    \subsection{Anharmonicity}
+    
+    Molecular bonds are not harmonic oscillators, we can not increase the frequency indefinitely, as the bond stretches
+    and gets longer it will eventually reach dissociation energy and fall apart. So for \ce{HCl} it will split into
+    H and Cl \emph{atoms}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=6.5cm]{dis.png}
+    \end{figure}
+
+    We describe the \emph{anharmonic} oscillations using the morse potential (the blue on the above diagram).
+    $$V(R) = D_e\left(1 - exp(-\beta(R-R_e))\right)^2$$
+    $D_e$ is the dissociation energy, however since the molecule always vibrates we can't measure this (remember
+    that $G(0) \neq 0$), so instead we have to measure $D_0 = D_e - G(0)$.
+
+    \subsubsection{Anharmonic oscillator transitions}
+    $$G(v) \text{ or } E(v) \text{ or } \tilde{\nu} = (v + \frac{1}{2})\omega_e - (v+\frac{1}{2})^2\omega_e x_e$$
+    
+    $x_e$ is the dimensionless anharmoninicity constant, however we normally talk about this constant in the form 
+    of $\omega_e x_e$. We need a dipole moment during the vibration, so only hateronuclear diatomics will work. 
+    \begin{itemize}
+        \item Harmonic oscillator $\Delta v = \pm 1$
+        \item Anharmonic oscialltor  $\Delta v = \pm 1, 2, 3...`'$
+    \end{itemize}
+    The transitions can be calculated by $\tilde{\nu}(2) - \tilde{\nu}(0)$.
+    \begin{itemize}
+        \item fundamental $(0 \rightarrow 1)\ \tilde{\nu}  = \omega_e - 2\omega_e x_e \mcm$
+        \item 1st overtone $(0 \rightarrow 2)\ \tilde{\nu} = 2\omega_e - 6\omega_e x_e \mcm$
+    \end{itemize}
+
+    \subsection{Vibration-rotation spectroscopy}
+
+    As we saw in a graph at the beginning, each vibrational transition has many rotational transitions associated
+    with it, however, they occur independently, and so we can add just add them together. $E_\text{tot} = E_\text{vib} + E_\text{rot}$
+    We denote this energy by $S(v, J) = G(v) + F(J)$ 
+
+    $$S(v, J) = \left(v + \frac{1}{2}\right)\omega_e - \left(v + \frac{1}{2}\right)^2\omega_e x_e + B_vJ(J+1)$$
+
+    \begin{itemize}
+        \item All $\Delta J = +1$ transitions give to rise an R-branch absorption, they have a higher wavenumber than $\tilde{\nu}_0$
+        \item All $\Delta J = -1$ transitions give rise to a P-branch absorption, they have a lower wavenumber than $\tilde{\nu}_0$
+    \end{itemize}
+    $\tilde{\nu}_0 = \omega_e - 2\omega_e x_e$ i.e. $\tilde{\nu}_0 = S(1, 0) - S(0, 0)$
+    
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=6.5cm]{vj.png}
+    \end{figure}
+
+    We can see the different types of transitions (R on the left, P on the right). The energy associated with any
+    vibrational transition ($v$) is the same no matter the rotational transition ($J$). For any transition we call 
+    the lower rotational energy $J''$ and the higher level $J'$, so for some generic transition.
+    $$\Delta \tilde{\nu} = S(v', J') - S(v)'', J'')$$
+    Take for example a vibrational transition in the fundamental vibrational band ($0 \rightarrow 1$), for any 
+    $J$ values the vibrational energy is always $\omega_e - 2\omega_e x_e$, so we only have to worry about the rotational
+    transition. Calculating for some generic $\tilde{\nu}$ in the fundamental vibrational band i.e. $J$ goes 
+    from $J''$ to $J'$. For $\tilde{\nu}_R$ tranistions we can say that $J' = J'' + 1$ (look at the above graph).
+
+    \begin{align*}
+        \tilde{\nu}_R (J'') &= S(1, J') - S(0, J'') = G(1) - G(0) + F(J') - F(J'') \\
+        &= \omega_e - 2\omega_e x_e + F(J') - F(J'')\\
+        \Delta F = F(J') - F(J'') &= B_1J'(J'+1) - B_0J''(J'' + 1)\\
+        J' &= J'' + 1\\
+        \Delta F &= B_1(J''+1)(J''+2) - B_0J''(J''+1)\\
+        \tilde{\nu}_R &= \omega_e - 2\omega_e x_e + B_1(J''+1)(J''+2) - B_0J''(J''+1)
+    \end{align*}
+
+    For $\tilde{\nu}_P$ transitions in the fundamental vibrational band, $J'' = J'+1$, so the maths is slightly different,
+    but only for the $\Delta F$ part.
+
+    \begin{align*}
+        \Delta F = F(J') - F(J'') &= B_1J'(J'+1) - B_0J''(J'' + 1)\\
+        J'' &= J' + 1\\
+        \Delta F &= B_1(J''+1)(J''+2) - B_0J''(J''+1)\\
+        \tilde{\nu}_P &= \omega_e - 2\omega_e x_e + B_1(J''-1)(J'') - B_0J''(J''+1)
+    \end{align*}
+
+    If we assume that $B_1 = B_0 = B$ then we can say that the spacing between each branch is $2B$ and the central
+    gap is $4B$
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=5cm]{rbr.jpg}
+    \end{figure}
+
+    \newpage
+    \subsection{Vibrational depedence of rotational constants}
+    
+    But is $B_1 = B_0$? For a harmonic oscialltor, which has symmetric energies, yes, it is. However for an
+    anharmonic oscialltor where the distance changes this is not the case, the wavefunction skews up the well.
+    We say $B \propto \frac{1}{\mu R^2}$, but R is changing with the vibration, so we need to consider
+    $<\frac{1}{R^2}>$ for B. $<R^2>$ increases with $v$, so $<\frac{1}{R^2}>$ decreases with $v$, so
+    $$B_0 > B_1 > B_{(v>1)}$$
+    The rotational constant gets small the higher $v$ we go.
+    $$B_v = B_e - \alpha\left(v + \frac{1}{2}\right)$$
+    $B_e$ is the rotational constant for the bottom of the well, it needs to be calculated and can't be found experimentally.
+    $\alpha$ is the vibration-rotation interaction constant. 
+    This means that if we know $B_v$ for any two energy levels then we derive $B_e$ and $\alpha$\\
+
+    We use tranistions with common upper or lower levels to determine the rotational constants.
+    \subsubsection{From the same level}
+    With two different transitions starting from the same J value, $J''$, at where $v$ goes $0\rightarrow1$.
+    Since both of them have the same $v$ transition, when they are subtracted they will equal 0 so this simplifies
+    the maths a lot. Since our transition equations are in the form of the initial $J$ value we can say.
+    
+    $$\nu_R(J) - \nu_P(J) = 2B_1(2J+1)\\$$
+
+    And from this we can obtain our $B_1$
+
+    \subsubsection{To the same level}
+    It is very similar, but now our transitions end on the same level, since $\nu_R$ goes up and $\nu_P$ goes down 
+    in J value, they must start like this.
+
+    $$\nu_R(J-1) - \nu_P(J+1) = 2B_0(2J+1)$$
+
+    What we can do for both of these is then plot a graph, where the slope is $B$ and from there we can calculate $B_e$ and $\alpha$
+
+    \subsection{Example}
+    HI molecule has its vibration-rotation spectrum measured, only four lines are given (\cm).
+
+    \begin{tabular}{l l}
+        $\tilde{\nu}$ & Difference\\
+        2204.019\\
+        & 13.021\\
+        2217.040\\
+        & 25.030\\
+        2242.070\\
+        &12.009 \\
+        2254.079\\
+    \end{tabular}
+
+    We can see from the differences that one is double the others, that means that 2242 will be the $\tilde{\nu}_0$ line.
+    The numbers lower than $R(0)$ are $P$ branches. 
+
+    \begin{tabular}{l l}
+        $\tilde{\nu}$ & Branch\\
+        2204.019 & P(2)\\
+        2217.040 & P(1)\\
+        2242.070 & R(0)\\
+        2254.079 & R(1)\\
+    \end{tabular}
+
+    Remember from our equations, that $\nu(J)$ uses the starting level, so to find $B_1$ we need levels with the 
+    same $J$ value.
+    \begin{align*}
+        \nu_R(J) - \nu_P(J) &= 2B_1(2J+1)\\
+        R(1) - P(1) &= 2254.079 - 2217.040 = 37.039\\
+        &= 2B_1(2J+1) = 6B_1\\
+        B_1 &= 6.1732
+    \end{align*}
+
+    For $B_0$ we need equations which end on the same level, or start two levels apart, luckily we have those too
+
+    \begin{align*}
+        \nu_R(J) - \nu_P(J) &= 2B_0(2J+1)\\
+        R(0)-P(2) &= 38.051\\
+        B_0 &= 6.3418
+    \end{align*}
+
+    Now we can find $B_e$ and $\alpha$ from our equations from before
+
+    \begin{align*}
+        B_v &= B_e - \alpha\left(v+\frac{1}{2}\right)\\
+        B_0 &= B_e - \frac{1}{2} \alpha\\
+        B_1 &= B_e - \frac{3}{2} \alpha\\
+        B_0 - B_1 &= \alpha = 0.1686 \mcm\\
+        B_e &= B_0 + \frac{1}{2}\alpha = 6.4261 \mcm\\
+    \end{align*}
+
+    We can now calculate the equilibrium bond length, $R_e$, recall that 
+
+    \begin{align*}
+        B_e \mcm &= \frac{h}{8\pi^2\mu R_e^2\tilde{c}}\\
+        R_e &= \sqrt{\frac{h}{8 \pi^2 \mu \tilde{c}B_e}} \ \text{cm}\\
+        &= 1.62 \ \text{\AA}
+    \end{align*}
 
 \end{document}
